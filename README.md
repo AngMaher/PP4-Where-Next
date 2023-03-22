@@ -140,12 +140,12 @@ Please find manual testing file here: [TESTING.md](/TESTING.md)
 
 - When program was ready for further deployment I visited heroku.com website to deploy on heroku.
 
+
+
 ## Deployment to Heroku
 - I visited https://heroku.com/ and opened dashboard. Then I clicked button "New" and selected "Create new app" button.
 
 - I entered my app name as "PP4-Where-Next", region to Europe and clicked on "Create app" button
-
-![create app](/assets/images/createapp.png)
 
 - The next step was to go to "Deploy" tab and then to "Deployment method" section to authorize and connect my GitHub account.
 
