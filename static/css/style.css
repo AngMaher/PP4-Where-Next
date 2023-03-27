@@ -42,7 +42,7 @@ body {
     background-color: rgb(87, 153, 225, 0.7);
 }
 
-.author {
+.category {
     color: white;
     margin: 4px;
     text-transform: uppercase;
@@ -130,14 +130,14 @@ body {
 }
 
 .btn-like {
-    color: #445261;
+    color: #343434;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #f38b4a;
+    color: #5799e1;
     background: transparent;
     border: none;
 }

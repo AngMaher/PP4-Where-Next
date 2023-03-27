@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
+CATEGORY = ((0, "General"), (1, "Tips"), (2, "Review"))
 
 
 class Post(models.Model):
@@ -17,6 +18,7 @@ class Post(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    category = models.IntegerField(choices=CATEGORY, default=0)
     likes = models.ManyToManyField(
         User, related_name='blog_likes', blank=True)
 
