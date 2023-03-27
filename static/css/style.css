@@ -141,3 +141,7 @@ body {
     background: transparent;
     border: none;
 }
+
+.alert-success {
+    background-color: rgb(87, 153, 225, 0.7);
+}
