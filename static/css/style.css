@@ -66,6 +66,7 @@ body {
 .masthead-image {
     position: relative;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .masthead-image:after {
