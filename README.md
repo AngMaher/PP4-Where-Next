@@ -2,6 +2,8 @@
 
 - [User Experience](#user-experience)
 
+  - [Colour Scheme](#colour-scheme)
+
   - [User Goals](#user-goals)
 
   - [Developer Goals](#developer-goals)
@@ -65,8 +67,22 @@
 
 # User Experience
 
-## User Goals
+I wanted to keep the design clean, clear and simple to show a contempary and uncluttered design.  The site is mainly off white for the background and blue a colour to premote travel.
 
+## Colour Scheme
+
+  - #343434 - Jet, this colour is used a on the majority of the text throughout the site, and the footer.
+  - #5799E1 - Blue, this is used on many features, buttons and highlighting links etc.
+  - #FDF8F4 - Off white, this is used as the main background colour of the site.
+  - #E64141 - Orange, this colour is used for the many messages and confirmations on the site.
+
+
+![colours used](/media/readme/Where-Next-Colours.png)
+
+I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
+
+## User Goals
+  - [#1](https://github.com/AngMaher/PP4-Where-Next/issues/1)
 
 ## Developer Goals
 
