@@ -5,13 +5,17 @@
 
 <div class="container-fluid">
     <div class="row">
-
         <div class="col-12 mt-3 left">
             <div class="row">
-                <h1>My Bucket List</h1>
+                <ul>
+                {% for list in object_list %}
+                    <li>{{ list.title }} -
+                    {{ list.user_name }}</li>
+                
+                {% endfor %}
+                </ul>
             </div>
         </div>
-
     </div>
 </div>
 

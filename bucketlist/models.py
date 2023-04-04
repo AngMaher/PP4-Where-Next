@@ -7,6 +7,7 @@ class List(models.Model):
         User, on_delete=models.CASCADE, related_name="user_name"
     )
     title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
     done = models.BooleanField(null=False, blank=False, default=False)

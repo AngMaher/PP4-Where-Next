@@ -8,6 +8,7 @@ CATEGORY = ((0, "General"), (1, "Tips"), (2, "Review"), (3, "Locations"))
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
+    title_tag = models.CharField(max_length=200, default="Where Next?")
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"

@@ -30,6 +30,16 @@ body {
     background: repeat center center;
     height: 150px;
 }
+
+.banner-text{
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    font-stretch: extra-expanded;
+    color:#343434;
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+}
 .image-container {
     position: relative;
 }

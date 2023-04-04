@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from bucketlist import views, models
 
 
 class BlogPosts(generic.ListView):
@@ -10,6 +11,7 @@ class BlogPosts(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
+
 
 class PostContent(View):
 
@@ -76,3 +78,8 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
+
+
+# class UserList(generic.ListView):
+#     model = list
+#     queryset = Post.objects.all()
