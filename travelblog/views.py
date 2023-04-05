@@ -78,8 +78,3 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
-
-
-# class UserList(generic.ListView):
-#     model = list
-#     queryset = Post.objects.all()

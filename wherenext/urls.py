@@ -21,5 +21,5 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     path('', include('travelblog.urls'), name='travelblog_urls'),
     path('accounts/', include('allauth.urls')),
-    path('bucketlist/<user_name>', include('bucketlist.urls'), name='bucketlist_urls')
+    path('bucketlist/', include('bucketlist.urls'), name='bucketlist_urls')
 ]

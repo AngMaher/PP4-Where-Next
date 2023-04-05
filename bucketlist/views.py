@@ -5,4 +5,4 @@ from .models import List
 
 class UserList(generic.ListView):
     model = List
-    template_name = 'bucketlist.html'
+    template_name = 'userbucketlist/bucketlist.html'
