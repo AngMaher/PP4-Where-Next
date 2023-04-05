@@ -8,10 +8,10 @@
     <div class="row">
         <div class="col-12 mt-3 left">
             <div class="row">
-                <p>
-                    Welcome to your bucketlist
-                </p>
-            </div>
+                <h2> Your Bucketlist</h2>
+                {% for list in object_list %}
+                <div>{{ list.title }}</div>
+                {% endfor %}
         </div>
     </div>
 </div>
