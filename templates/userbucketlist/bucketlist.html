@@ -11,7 +11,7 @@
                 <h2> Your Bucketlist</h2>
                 {% for list in object_list %}
                 <div>{{list.created_on}} <br/>{{ list.title }}<hr>
-                    <a href="{% url 'update_post' list.pk %}">Edit</a>
+                    <a href="{% url 'update_list_item' list.pk %}">Edit</a>
                 </div>
                 
                 {% endfor %}
