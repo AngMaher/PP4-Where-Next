@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.views import generic, View
 from .models import List
+from django.urls import reverse_lazy
 
 
 class UserList(generic.ListView):
@@ -33,3 +34,9 @@ class UpdateListItem(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_list_item.html'
     fields = ['title']
+
+
+class DeleteListItem(generic.DeleteView):
+    model = List
+    template_name = 'userbucketlist/delete_list_item.html'
+    success_url = reverse_lazy('bucketlist')

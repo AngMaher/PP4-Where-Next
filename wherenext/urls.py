@@ -24,4 +24,5 @@ urlpatterns = [
     path('bucketlist/', include('bucketlist.urls'), name='bucketlist_urls'),
     path('add_list_item/', include('bucketlist.urls'), name='add_list_item'),
     path('update_list_item/', include('bucketlist.urls'), name='update_list_item'),
+    path('delete_list_item/', include('bucketlist.urls'), name='delete_list_item'),
 ]
