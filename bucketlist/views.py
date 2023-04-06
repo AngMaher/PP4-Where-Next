@@ -8,16 +8,28 @@ class UserList(generic.ListView):
     template_name = 'userbucketlist/bucketlist.html'
 
 
-# class PostBucketlist(View):
+class PostBucketlist(View):
 
-#     def get(self, request, slug, *args, **kwargs):
-#         queryset = Post.objects.all()
-#         list = get_object_or_404(queryset)
+    def get(self, request, *args, **kwargs):
+        queryset = Post.objects.all()
+        list = get_object_or_404(queryset)
 
-#         return render(
-#             request,
-#             "bucketlist.html",
-#             {
-#                 "list": list,
-#             },
-#         )
+        return render(
+            request,
+            "userbucketlist/bucketlist.html",
+            {
+                "list": list,
+            },
+        )
+
+
+class AddListItem(generic.CreateView):
+    model = List
+    template_name = 'userbucketlist/add_list_item.html'
+    fields = '__all__'
+
+
+class UpdateListItem(generic.UpdateView):
+    model = List
+    template_name = 'userbucketlist/update_list_item.html'
+    fields = ['title']

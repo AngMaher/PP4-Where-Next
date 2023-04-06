@@ -10,8 +10,12 @@
             <div class="row">
                 <h2> Your Bucketlist</h2>
                 {% for list in object_list %}
-                <div>{{ list.title }}</div>
+                <div>{{list.created_on}} <br/>{{ list.title }}<hr>
+                    <a href="{% url 'update_post' list.pk %}">Edit</a>
+                </div>
+                
                 {% endfor %}
+                <span><a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a></span>
         </div>
     </div>
 </div>
