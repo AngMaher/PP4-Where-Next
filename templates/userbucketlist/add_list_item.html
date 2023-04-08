@@ -3,12 +3,18 @@
 
 
 {% block content %}
-<h1>Add Bucketlist Item</h1>
 
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button class="btn btn-info">Add</button>
-</form>
+{% if user.is_authenticated %}
+    <h1>Add Bucketlist Item</h1>
 
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-info">Add</button>
+    </form>
+{% else %}
+    <h2>Please login: 
+        <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+    </h2>
+{% endif %}
 {%endblock%}

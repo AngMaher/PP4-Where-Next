@@ -13,7 +13,7 @@ class List(models.Model):
     done = models.BooleanField(null=False, blank=False, default=False)
 
     class Meta:
-        ordering = ["-created_on"]
+        ordering = ["created_on"]
 
     def __str__(self):
         return self.title

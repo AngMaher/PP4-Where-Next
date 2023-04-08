@@ -3,16 +3,23 @@
 
 
 {% block content %}
-<h1>Update Bucketlist Item</h1>
 
-<div class="form-group">
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-info">Update</button>
-    </form>
-</div>
-<br/>
-<a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+{% if user.is_authenticated %}
+    <h1>Update Bucketlist Item</h1>
+
+    <div class="form-group">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-info">Update</button>
+        </form>
+    </div>
+    <br/>
+    <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+{% else %}
+    <h2>Please login: 
+        <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+    </h2>
+{% endif %}
 
 {%endblock%}

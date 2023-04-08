@@ -4,24 +4,29 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                <h2> Your Bucketlist</h2>
-                {% for list in object_list %}
-                <div>{{list.created_on}} <br/>{{ list.title }}
-                   <small><a href="{% url 'update_list_item' list.pk %}">Edit</a></small>
-                   <small><a href="{% url 'delete_list_item' list.pk %}">Delete</a></small>
-                   <hr>
-                </div>
-                
-                {% endfor %}
-                <span><a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a></span>
-                <br/>
-                <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+{% if user.is_authenticated %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-3 left">
+                <div class="row">
+                    <h2> Your Bucketlist</h2>
+                    {% for list in object_list %}
+                    <div>{{list.created_on}} <br/>{{ list.title }}
+                        <small><a href="{% url 'update_list_item' list.pk %}">Edit</a></small>
+                        <small><a href="{% url 'delete_list_item' list.pk %}">Delete</a></small>
+                    <hr>
+                    </div>
+                    
+                    {% endfor %}
+                    <span><a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a></span>
+                    <br/><br/>
+                    <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+            </div>
         </div>
     </div>
-</div>
-
+{% else %}
+    <h2>Please login: 
+        <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+    </h2>
+{% endif %}
 {%endblock%}
