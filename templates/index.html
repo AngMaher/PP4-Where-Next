@@ -21,7 +21,7 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="category">Category: {{ post.get_category_display }}</p>
+                                    <p class="category">Category:</p>
                                 </div>
                             </div>
                             <a href="{% url 'post_content' post.slug %}" class="post-link">

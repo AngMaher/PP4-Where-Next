@@ -5,6 +5,12 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 CATEGORY = ((0, "General"), (1, "Tips"), (2, "Review"), (3, "Destinations"))
 
+class Catergory(models.Model):
+    name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.title
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
