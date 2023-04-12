@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, get_object_or_404
 from django.views import generic, View
 from .models import List
 from django.urls import reverse_lazy
@@ -6,22 +6,24 @@ from django.urls import reverse_lazy
 
 class UserList(generic.ListView):
     model = List
+    queryset = List.objects.all()
     template_name = 'userbucketlist/bucketlist.html'
 
 
-class PostBucketlist(View):
+# class PostBucketlist(View):
 
-    def get(self, request, *args, **kwargs):
-        queryset = Post.objects.all()
-        list = get_object_or_404(queryset)
+#     def get(self, request, *args, **kwargs):
+#         current_user = request.user
+#         queryset = List.objects.filter(current_user)
+#         list = get_object_or_404(queryset)
 
-        return render(
-            request,
-            "userbucketlist/bucketlist.html",
-            {
-                "list": list,
-            },
-        )
+#         return render(
+#             request,
+#             "userbucketlist/bucketlist.html",
+#             {
+#                 "list": list,
+#             },
+#         )
 
 
 class AddListItem(generic.CreateView):
@@ -33,7 +35,7 @@ class AddListItem(generic.CreateView):
 class UpdateListItem(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_list_item.html'
-    fields = ['title']
+    fields = ['title','done']
 
 
 class DeleteListItem(generic.DeleteView):

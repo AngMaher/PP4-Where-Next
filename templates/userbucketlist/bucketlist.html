@@ -5,18 +5,25 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+<!-- current user: {{ user.username}} -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 mt-3 left">
                 <div class="row">
                     <h2> Your Bucketlist</h2>
                     {% for list in object_list %}
-                    <div>{{list.created_on}} <br/>{{ list.title }}
-                        <small><a href="{% url 'update_list_item' list.pk %}">Edit</a></small>
-                        <small><a href="{% url 'delete_list_item' list.pk %}">Delete</a></small>
-                    <hr>
-                    </div>
-                    
+                        {% if list.user_name.id == user.id %}
+                            <div>Posted By: <strong>{{list.user_name.username}}</strong> on <strong>{{list.created_on}}</strong>
+                                {% if list.done %}
+                                    <br/><strike>{{ list.title }}</strike>
+                                {% else %}
+                                    <br/>{{ list.title }}
+                                {% endif %}
+                                <small><a href="{% url 'update_list_item' list.pk %}">Edit/Mark as Done</a></small>
+                                <small><a href="{% url 'delete_list_item' list.pk %}">Delete</a></small>
+                            <hr>
+                            </div>
+                        {% endif %}
                     {% endfor %}
                     <span><a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a></span>
                     <br/><br/>
