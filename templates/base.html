@@ -81,6 +81,21 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg"
+                    role="alert">
+                    {{ message | safe}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
@@ -96,6 +111,7 @@
             </div>
           </div>
     </footer>
+    <script src="static/JS/script.js"></script>
     <script src="https://kit.fontawesome.com/2b8a10e04d.js" crossorigin="anonymous"></script>
 </body>
 
