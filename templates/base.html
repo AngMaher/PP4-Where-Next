@@ -40,58 +40,60 @@
 
     <nav class="nav nav-expand navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Where Next?</span></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                    </li>
+                {% with request.resolver_match.url_name as url_name %}
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'home' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'account_logout' %}active{% endif %}" href="{% url 'account_logout' %}">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'bucketlist' %}active{% endif %}" href="{% url 'bucketlist' %}">Bucketlist</a>
+                        </li>
+
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'account_signup' %}active{% endif %}" href="{% url 'account_signup' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if url_name == 'account_login' %}active{% endif %}" href="{% url 'account_login' %}">Login</a>
+                        </li>
+                        {% endif %}
+                    </ul>
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'bucketlist' %}">Bucketlist</a>
-                    </li>
-
+                    <span>
+                        <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Where Next?</span></a>
+                        <a class="icon-bucketlist" href="{% url 'admin:index' %}"><i class="fa-sharp fa-solid fa-toolbox"></i></a>
+                    </span>
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                    </li>
+                    <span>
+                        <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Where Next?</span></a>
+                        <a class="icon-bucketlist" href="{% url 'admin:index' %}"><i class="fa-sharp fa-solid fa-toolbox"></i></a>
+                    </span>
                     {% endif %}
-                </ul>
-                {% if user.is_authenticated %}
-                <span>
-                    <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Where Next? </span></a>
-                </span>
-                {% else %}
-                <span>
-                    <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Where Next?</span></a>
-                </span>
-                {% endif %}
-
+                {% endwith %}
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                {% for message in messages %}
-                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg"
-                    role="alert">
-                    {{ message | safe}}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                    </button>
-                    </div>
-                {% endfor %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    {% for message in messages %}
+                        <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg"
+                        role="alert">
+                        {{ message | safe}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                        </div>
+                    {% endfor %}
             </div>
         </div>
     </div>

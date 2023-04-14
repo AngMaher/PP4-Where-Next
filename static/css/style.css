@@ -15,12 +15,21 @@ body {
 }
 
 .nav {
-    font-size: 30px;
+    font-size: 22px;
+}
+
+.active {
+    border-bottom: 2px solid #343434;
 }
 
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-list {
+    border: solid;
+    background-color: rgb(87, 153, 225, .3);
 }
 
 .logo {
@@ -133,6 +142,11 @@ body {
     color: #5799e1;
 }
 
+.icon-bucketlist {
+    color: #343434;
+    text-decoration: none;
+}
+
 .link {
     color: #5799e1;
     text-decoration: none;
@@ -159,4 +173,11 @@ body {
 
 .alert-success {
     background-color: rgb(87, 153, 225, 0.7);
+}
+
+@media screen and (max-width: 600px){
+    .banner-text {
+       font-size: 150%;
+       position: left;
+    }
 }

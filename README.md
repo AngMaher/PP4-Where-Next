@@ -2,6 +2,8 @@
 
 - [User Experience](#user-experience)
 
+  -[Wireframes](#wireframes)
+
   - [Colour Scheme](#colour-scheme)
 
   - [User Goals](#user-goals)
@@ -68,6 +70,13 @@
 # User Experience
 
 I wanted to keep the design clean, clear and simple to show a contempary and uncluttered design.  The site is mainly off white for the background and blue a colour to premote travel.
+
+## Wireframes
+
+![blog page](/media/readme/blogview.png)
+![blog content](/media/readme/blogcontent.png)
+![bucketlist](/media/readme/bucketlist.png)
+![sign-in page](/media/readme/signin.png)
 
 ## Colour Scheme
 

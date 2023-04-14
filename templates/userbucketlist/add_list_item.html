@@ -11,6 +11,7 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button class="btn btn-info">Add</button>
+        <span><a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a></span>
     </form>
 {% else %}
     <h2>Please login: 

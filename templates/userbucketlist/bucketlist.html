@@ -12,22 +12,35 @@
                 <div class="row">
                     <h2> Your Bucketlist</h2>
                     {% for list in object_list %}
+                    <br/>
                         {% if list.user_name.id == user.id %}
-                            <div>Posted By: <strong>{{list.user_name.username}}</strong> on <strong>{{list.created_on}}</strong>
-                                {% if list.done %}
-                                    <br/><strike>{{ list.title }}</strike>
-                                {% else %}
-                                    <br/>{{ list.title }}
-                                {% endif %}
-                                <small><a href="{% url 'update_list_item' list.pk %}">Edit/Mark as Done</a></small>
-                                <small><a href="{% url 'delete_list_item' list.pk %}">Delete</a></small>
-                            <hr>
+                        <div class="col-md-8">
+                            <div class="card-list mb-8">
+                                <div class="card-body-list">
+                                    <div>Posted By: <strong>{{list.user_name.username}}</strong> on <strong>{{list.created_on}}</strong>
+                                        <hr>
+                                        {% if list.done %}
+                                            <strike>{{ list.title }}</strike>
+                                        {% else %}
+                                            {{ list.title }}
+                                        {% endif %}
+                                        <br>
+                                        <hr>
+                                        <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"></i></a>
+                                        <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"></i></a>
+                                        <br/>
+                                    </div>
+                                </div>
                             </div>
+                        </div>   
+                        <br/> 
                         {% endif %}
                     {% endfor %}
-                    <span><a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a></span>
-                    <br/><br/>
-                    <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+                    <span>
+                        <a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a>
+                        <a href="{% url 'home' %}" class="btn btn-info">  Back</a>
+                    </span>
+                
             </div>
         </div>
     </div>
