@@ -12,7 +12,7 @@
                 <div class="row">
                     <h2> Your Bucketlist</h2>
                     {% for list in object_list %}
-                    <br/>
+                    <br/><br/>
                         {% if list.user_name.id == user.id %}
                         <div class="col-md-8">
                             <div class="card-list mb-8">
@@ -26,9 +26,9 @@
                                         {% endif %}
                                         <br>
                                         <hr>
-                                        <span class="edit-delete-icon offset-md-2">
-                                            <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"></i></a>
-                                            <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"></i></a>
+                                        <span class="edit-delete-icon">
+                                            <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"><small>Edit</small></i></a>
+                                            <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small>Delete</small></i></a>
                                         </span>
                                         <br/>
                                     </div>
