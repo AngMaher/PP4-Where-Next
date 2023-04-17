@@ -4,31 +4,47 @@
 
 {% block content %}
 
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3 masthead-text">
+                <h1 class="post-title">Your Bucketlist
+                </h1>
+            </div>
+            <div class="d-none d-md-block col-md-6 masthead-image">
+                <img src="https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%">
+            </div>
+            <div class="col-md-3 masthead-text masthead-image">
+            </div>
+
+        </div>
+    </div>
+</div>
+
 {% if user.is_authenticated %}
-<!-- current user: {{ user.username}} -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 mt-3 offset-md-2">
                 <div class="row">
-                    <h2> Your Bucketlist</h2>
                     {% for list in object_list %}
-                    <br/><br/>
                         {% if list.user_name.id == user.id %}
                         <div class="col-md-8">
-                            <div class="card-list mb-8">
-                                <div class="card-body-list">
+                            <div class="card-list mb-4">
+                                <div class="card-body-list offset-md-2">
+                                    <br/>
                                     <div>Posted By: <strong>{{list.user_name.username}}</strong> on <strong>{{list.created_on}}</strong>
                                         <hr>
                                         {% if list.done %}
-                                            <strike>{{ list.title }}</strike>
+                                            <strike><strong>{{ list.title }}</strong></strike>
                                         {% else %}
-                                            {{ list.title }}
+                                            <strong>{{ list.title }}</strong>
                                         {% endif %}
-                                        <br>
-                                        <hr>
+                                        <br/>
                                         <span class="edit-delete-icon">
+                                            <hr>
                                             <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"><small>Edit</small></i></a>
                                             <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small>Delete</small></i></a>
+                                            <br/>
                                         </span>
                                         <br/>
                                     </div>

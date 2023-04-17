@@ -28,8 +28,8 @@ body {
 }
 
 .card-list {
-    border: 1px solid;
-    background-color: rgb(87, 153, 225, .3);
+    background-color: rgba(194, 203, 212, 0.3);
+    border-radius: 10%;
 }
 
 .edit-delete-icon {
@@ -127,6 +127,13 @@ body {
 
 .btn-info {
     background-color: #5799e1;
+    font-weight: 600;
+}
+
+.btn-info:hover {
+    background-color: #fdf8f4;
+    color:#5799e1;
+    font-weight: 700;
 }
 .post-subtitle {
     margin-left: 5%;
