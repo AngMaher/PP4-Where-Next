@@ -69,7 +69,7 @@
                     </ul>
                     {% if user.is_authenticated %}
                     <span>
-                        <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Where Next?</span></a>
+                        <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Welcome: {{ user.first_name }}</span></a>
                         <a class="icon-bucketlist" href="{% url 'admin:index' %}"><i class="fa-sharp fa-solid fa-toolbox"></i></a>
                     </span>
                     {% else %}

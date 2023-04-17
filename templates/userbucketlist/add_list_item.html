@@ -5,14 +5,23 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <h1>Add Bucketlist Item</h1>
+    <br/>
+    <h1 class="offset-md-2">Add Bucketlist Item</h1>
 
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-info">Add</button>
-        <span><a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a></span>
-    </form>
+    <div class="form-group">
+        <form method="POST" class="offset-md-2">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-info">Add</button>
+            <span><a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a></span>
+        </form>
+    </div>
+
+    <script>
+        let name = "{{ user.id }}";
+        document.getElementById("user").value 
+            = name;
+    </script>
 {% else %}
     <h2>Please login: 
         <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>

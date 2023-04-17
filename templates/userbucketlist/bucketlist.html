@@ -26,8 +26,10 @@
                                         {% endif %}
                                         <br>
                                         <hr>
-                                        <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"></i></a>
-                                        <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"></i></a>
+                                        <span class="edit-delete-icon offset-md-2">
+                                            <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"></i></a>
+                                            <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"></i></a>
+                                        </span>
                                         <br/>
                                     </div>
                                 </div>
@@ -37,6 +39,7 @@
                         {% endif %}
                     {% endfor %}
                     <span>
+                        <br/><br/>
                         <a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a>
                         <a href="{% url 'home' %}" class="btn btn-info">  Back</a>
                     </span>

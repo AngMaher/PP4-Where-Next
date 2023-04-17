@@ -5,17 +5,12 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <h1>Delete Bucketlist Item</h1>
-    <h3>Delete: {{ list.title }}</h3>
 
-    <div class="form-group">
-        <form method="POST">
-            {% csrf_token %}
+    <h1>Delete Bucketlist Item</h1>
+    <p>Are you sure you want to delete:</p> 
+    <p>{{ list.title }}</p>
             
-            <button class="btn btn-info">Delete Item</button>
-        </form>
-    </div>
-    <br/>
+    <button class="btn btn-info">Delete Item</button>
     <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
 {% else %}
     <h2>Please login: 
