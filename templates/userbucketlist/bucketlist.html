@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-3 masthead-text">
-                <h1 class="post-title">Your Bucketlist
+                <h1 class="post-title">Your Bucket List
                 </h1>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
@@ -35,7 +35,7 @@
                                     <div>Posted By: <strong>{{list.user_name.username}}</strong> on <strong>{{list.created_on}}</strong>
                                         <hr>
                                         {% if list.done %}
-                                            <strike><strong>{{ list.title }}</strong></strike>
+                                        <i class="fa-solid fa-check fa-lg"></i> <strike><strong> {{ list.title }}</strong></strike>
                                         {% else %}
                                             <strong>{{ list.title }}</strong>
                                         {% endif %}
