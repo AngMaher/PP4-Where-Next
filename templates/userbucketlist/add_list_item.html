@@ -12,8 +12,10 @@
         <form method="POST" class="offset-md-2">
             {% csrf_token %}
             {{ form.as_p }}
-            <button class="btn btn-info">Add</button>
-            <span><a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a></span>
+            <div>
+                <button class="btn btn-info">Add</button>
+                <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+            </div>
         </form>
     </div>
 

@@ -12,7 +12,8 @@
                 </h1>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%">
+                <img src="https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    width="100%">
             </div>
             <div class="col-md-3 masthead-text masthead-image">
             </div>
@@ -22,50 +23,64 @@
 </div>
 
 {% if user.is_authenticated %}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 mt-3 offset-md-2">
-                <div class="row">
-                    {% for list in object_list %}
-                        {% if list.user_name.id == user.id %}
-                        <div class="col-md-8">
-                            <div class="card-list mb-4">
-                                <div class="card-body-list offset-md-2">
-                                    <br/>
-                                    <div>Posted By: <strong>{{list.user_name.username}}</strong> on <strong>{{list.created_on}}</strong>
-                                        <hr>
-                                        {% if list.done %}
-                                        <i class="fa-solid fa-check fa-lg"></i> <strike><strong> {{ list.title }}</strong></strike>
-                                        {% else %}
-                                            <strong>{{ list.title }}</strong>
-                                        {% endif %}
-                                        <br/>
-                                        <span class="edit-delete-icon">
-                                            <hr>
-                                            <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i class="fas fa-edit"><small>Edit</small></i></a>
-                                            <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small>Delete</small></i></a>
-                                            <br/>
-                                        </span>
-                                        <br/>
-                                    </div>
-                                </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-3 offset-md-2">
+            <div class="row">
+                {% for list in object_list %}
+                {% if list.user_name.id == user.id %}
+                {% if forloop.counter is not None %}
+                <div class="col-md-8">
+                    <div class="card-list mb-4">
+                        <div class="card-body-list offset-md-2">
+                            <br />
+                            <div>Posted By: <strong>{{list.user_name.username}}</strong> on
+                                <strong>{{list.created_on}}</strong>
+                                <hr>
+                                {% if list.done %}
+                                <i class="fa-solid fa-check fa-lg"></i> <strike><strong>
+                                        {{ list.title }}</strong></strike>
+                                {% else %}
+                                <strong>{{ list.title }}</strong>
+                                {% endif %}
+                                <br />
+                                <span>
+                                <!-- <span class="edit-delete-icon"> -->
+                                    <hr>
+                                    <a class="icon-bucketlist" href="{% url 'update_list_item' list.pk %}"><i
+                                            class="fas fa-edit"><small>Edit</small></i></a>
+                                    <a class="icon-bucketlist" href="{% url 'delete_list_item' list.pk %}"><i
+                                            class="fas fa-trash"><small>Delete</small></i></a>
+                                    <a class="icon-bucketlist" href="{% url 'store_planning' list.pk %}"><i
+                                            class="fa-solid fa-plane-departure"><small>View Plan</small></i></a>
+                                    <a class="icon-bucketlist" href="{% url 'update_planning' list.pk %}"><i
+                                            class="fa-solid fa-plane-departure"><small>Add to  Your Plan</small></i></a>
+                                    <br />
+                                </span>
+                                <br />
                             </div>
-                        </div>   
-                        <br/> 
-                        {% endif %}
-                    {% endfor %}
-                    <span>
-                        <br/><br/>
-                        <a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a>
-                        <a href="{% url 'home' %}" class="btn btn-info">  Back</a>
-                    </span>
-                
+                        </div>
+                    </div>
+                </div>
+                <br />
+                {% else %}
+                <h1>No Items to dsplay</h1>
+                <p>Create a new Item</p>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+                <div class="offset-md-3">
+                    <br /><br />
+                    <a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a>
+                    <a href="{% url 'home' %}" class="btn btn-info"> Back</a>
+                </div>
+                <br />
             </div>
         </div>
     </div>
-{% else %}
-    <h2>Please login: 
+    {% else %}
+    <h2>Please login:
         <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
     </h2>
-{% endif %}
-{%endblock%}
+    {% endif %}
+    {%endblock%}
