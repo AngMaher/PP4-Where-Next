@@ -56,15 +56,17 @@
 
                             </form>
                             {% else %}
+                            
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ post.number_of_likes }} </span>
+                            
                         </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
-                            {{ total_comments }}
+                        <span class="text-secondary"><strong><i class="far fa-comments"></i></strong></span>
+                        <span class="text-secondary"><strong>{{ total_comments }} </strong></span>
                         </strong>
                         {% endwith %}
                     </div>

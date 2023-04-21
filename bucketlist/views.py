@@ -3,7 +3,6 @@ from django.views import generic, View
 from .models import List
 from django.urls import reverse_lazy
 from .forms import AddBucketlistForm
-from django_summernote.widgets import SummernoteWidget
 
 
 class UserList(generic.ListView):

@@ -29,7 +29,7 @@
             <br />
             {% for list in object_list %}
             {% if list.user_name.id == user.id %}
-                <p>{{ list.planning }}</p>
+                <p>{{ list.planning | safe }}</p>
             {% endif %}
             {% endfor %}
             <div class="offset-md-3">

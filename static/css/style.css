@@ -159,6 +159,7 @@ body {
 .icon-bucketlist {
     color: #343434;
     text-decoration: none;
+    word-spacing: normal;
 }
 
 .link {
