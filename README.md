@@ -121,9 +121,27 @@ I decided to keep the website bright with a main colur of blue throughout the si
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
 
 ### User Goals
-  - [#1](https://github.com/AngMaher/PP4-Where-Next/issues/1)
+  - As a Site User I can view a list of posts so that I can choose which post I want to view. `(MUST HAVE)`
+  - As a Site User I can create and account so that Extend the features of the website to comment/like and create my own bucket list. `(MUST HAVE)`
+  - As a Site User/ Admin I can view likes on posts so that I can see which posts are popular. `(MUST HAVE)`
+  - As a Site User I can comment on a post so that I can feel part of the conversation. `(MUST HAVE)`
+  - As a Site User I can create my own bucket list so that I can keep track of goals. `(MUST HAVE)`
+  - As a Site User I can edit and delete items from my bucket list so that I can interact with the list. `(SHOULD HAVE)` `(MUST HAVE)`
+  - As a Site User I can save a post onto my account so that I can have a list of the most relevant posts to read later. `(COULD HAVE)`
+  - As a Site User /Admin I can view comments on an individual post so that I can read the conversation. `(MUST HAVE)`
+  - As a Site User I can like/unlike posts so that I can interact with the content. `(SHOULD HAVE)`
+  - As a Site User I can mark of what I have achieved on my bucket list so that I can see my progress. `(COULD HAVE)`
+  - As a Site User I can view an more detailed version of the post so that I can read the article in full. `(MUST HAVE)`
+  - As a Site User I can create a mood-board/plan for each item on my bucket list so that I have a place 
+      to store all the details I need to make my goal a reality. `(SHOULD HAVE)`
+  - As a Site User I can View mood-board/plan so that I can view my plan so far without having to go into edit mode. `(SHOULD HAVE)`
 
 ### Developer Goals
+
+ - As a Site Admin I can create, read and delete posts so that I can manage my blog content. `(MUST HAVE)`
+ - As a Site Admin I can approve and disapprove comments so that I can filter out objectionable comments. `(SHOULD HAVE)`
+ - As a Site Admin I can create draft posts so that I can finish writing the content later. `(SHOULD HAVE)`
+ - As a Site Admin I can access the admin from a link on the web page so that I have easier access. `(SHOULD HAVE)`
 
 
 
@@ -142,10 +160,15 @@ I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my c
 
 ## Technology
 
+<img height="50" src="docs/readme/python_django.png">  <img height="50" src="README/elephantsql.png">  <img height="50" src="README/cloudinary.png"> <img height="50" src="README/html.png">  <img height="50" src="README/css.png">  <img height="50" src="README/bootstrap.png">  <img height="50" src="README/js.png">  <img height="50" src="README/gitpod.png">  <img height="50" src="README/github.png">
+
 ### Languages Used
 
-- [Python](https://www.python.org/) - high level programming language
+- [HTML](https://www.w3schools.com/html/) - Used for the main site.
 - [Markdown](https://www.markdownguide.org/cheat-sheet) - language used to write README and TESTING documents.
+- [CSS](https://www.w3schools.com/css/) - Styling language, used for the styling of the website.
+- [Python](https://www.python.org/) - high level programming language, used of the back end programming language.
+
 
 ### Software Used
 
@@ -233,7 +256,7 @@ Please find manual testing file here: [TESTING.md](/TESTING.md)
 - To make a copy or ‘fork’ the repository
   - Log into GitHub and locate the repository
   - Select the ‘fork’ option to create and copy the original
-  Link to Github repository: ![Github](https://github.com/AngMaher/St-Mochtas-FC)
+  Link to Github repository: ![Github](https://github.com/AngMaher/PP4)
 
 ## Future Development
 
