@@ -105,7 +105,7 @@ body {
     width: 150%;
     background: #5799e1;
     -webkit-transform: skew(10deg);
-    -moz-transform: skew(10deg);
+    -moz-transform: skew(0deg);
     transform: skew(10deg);
     z-index: 100;
 }

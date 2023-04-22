@@ -5,6 +5,7 @@
 
 {%  load crispy_forms_tags %}
 
+<!-- Masthead and image -->
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -28,13 +29,14 @@
     </div>
 </div>
 
+<!-- Blog content display -->
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left top">
             <div class="card-body">
                 <p class="card-text ">{{ post.content | safe }}</p>
                 <div class="row">
-
+                    <!-- User number of likes and comments -->
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
@@ -74,6 +76,7 @@
             </div>
         </div>
     </div>
+    <!--display comments -->
     <div class="row">
         <div class="col">
             <hr>
@@ -97,6 +100,7 @@
                 {% endfor %}
             </div>
         </div>
+        <!-- Form to enter a comment -->
         <div class="row">
             <div class="col-md-12 card mb-4  mt-3">
                 <div class="card-body">

@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse, get_object_or_404
 from django.views import generic, View
 from .models import List
 from django.urls import reverse_lazy
+from django.contrib import messages
 from .forms import AddBucketlistForm
 
 
@@ -16,6 +17,20 @@ class AddListItem(generic.CreateView):
     form_class = AddBucketlistForm
     template_name = 'userbucketlist/add_list_item.html'
     # fields = ['title', 'user_name', 'done']
+
+    def post(self, request, *args, **kwargs):
+        queryset = List.objects.all()
+
+        add_item_form = AddBucketlistForm(data=request.POST)
+
+        if add_item_form.is_valid():
+            messages.add_message(request, messages.SUCCESS, 'Successfully added a comment.')
+        else:
+            Add_item_form = AddBucketlistForm()
+
+        def get_object(self):
+            return self.request.user
+
 
 
 class UpdateListItem(generic.UpdateView):
