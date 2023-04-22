@@ -18,19 +18,18 @@ class AddListItem(generic.CreateView):
     template_name = 'userbucketlist/add_list_item.html'
     # fields = ['title', 'user_name', 'done']
 
-    def post(self, request, *args, **kwargs):
-        queryset = List.objects.all()
+    # def post(self, request, *args, **kwargs):
+    #     queryset = List.objects.all()
 
-        add_item_form = AddBucketlistForm(data=request.POST)
+    #     add_item_form = AddBucketlistForm(data=request.POST)
 
-        if add_item_form.is_valid():
-            messages.add_message(request, messages.SUCCESS, 'Successfully added a comment.')
-        else:
-            Add_item_form = AddBucketlistForm()
+    #     if add_item_form.is_valid():
+    #         messages.add_message(request, messages.SUCCESS, 'Successfully added a comment.')
+    #     else:
+    #         Add_item_form = AddBucketlistForm()
 
-        def get_object(self):
-            return self.request.user
-
+    #     def get_object(self):
+    #         return self.request.user
 
 
 class UpdateListItem(generic.UpdateView):

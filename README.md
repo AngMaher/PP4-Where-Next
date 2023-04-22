@@ -1,4 +1,32 @@
-# Table of Contents
+# Where Next?
+
+## About
+
+This website is a Travel Blog, a travel blog with a difference. There are lots of different blog articles to read to inspire your next adventure. 
+Not only that! You can set up your own private Travel Bucket List, and also plan how to make each one a reality!!
+
+The User has access to all the blogs on the site, once registered and logged in, they can interact with the each blog by liking and commenting. 
+
+This site also allows them to store their very one Travel Bucket List, They can:
+  - Create new items on their list.
+  - Edit any of their ideas.
+  - Delete any they longer want to achieve.
+  - Mark off as done, when they have completed them.
+  
+Then they can take it a little further....
+For each Item on their Bucket List, lets say "Want to travel to Rome". They can:
+  - Add extra content. This is to make their wish into a reality and plan their trip. Any images they find, or links to hotels, flights etc. 
+  Any information they come across can be stored here. Or a list of items they need to buy etc. Its like an online mood board 
+  - They can view their plan, without going into edit mode, to see their plan come together.
+
+
+You can find the live appliaction here: <a href ='https://pp4-where-next.herokuapp.com/'>Where Next?</a>
+
+![Am I responsive](/media/readme/amiresponsive.png)
+
+
+
+## Table of Contents
 
 - [User Experience](#user-experience)
 
@@ -18,7 +46,7 @@
 
   - [Features](#features)
 
-    - [Main Menu](#main-menu)
+    - [main menu](#main-menu)
 
     - [Player Menu](#player-menu)
 
@@ -67,18 +95,20 @@
 - [Acknowledgements](#acknowledgements)
 
 
-# User Experience
+## User Experience
 
 I wanted to keep the design clean, clear and simple to show a contempary and uncluttered design.  The site is mainly off white for the background and blue a colour to premote travel.
 
-## Wireframes
+### Wireframes
 
 ![blog page](/media/readme/blogview.png)
 ![blog content](/media/readme/blogcontent.png)
 ![bucketlist](/media/readme/bucketlist.png)
 ![sign-in page](/media/readme/signin.png)
 
-## Colour Scheme
+### Colour Scheme
+
+I decided to keep the website bright with a main colur of blue throughout the site. 
 
   - #343434 - Jet, this colour is used a on the majority of the text throughout the site, and the footer.
   - #5799E1 - Blue, this is used on many features, buttons and highlighting links etc.
@@ -90,34 +120,34 @@ I wanted to keep the design clean, clear and simple to show a contempary and unc
 
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
 
-## User Goals
+### User Goals
   - [#1](https://github.com/AngMaher/PP4-Where-Next/issues/1)
 
-## Developer Goals
+### Developer Goals
 
 
 
-# Logic and Features
+## Logic and Features
 
-## Logic
-
-
-## Database structure
+### Logic
 
 
-## Features
+### Database structure
+
+
+### Features
 
 
 
 
-# Technology
+## Technology
 
-## Languages Used
+### Languages Used
 
 - [Python](https://www.python.org/) - high level programming language
 - [Markdown](https://www.markdownguide.org/cheat-sheet) - language used to write README and TESTING documents.
 
-## Software Used
+### Software Used
 
 - [LucidChart](https://lucidchart.com) - LucidChart was used to create flowchart for the project.
 - [Git](https://git-scm.com/) - Git was used for version control by using the Gitpod terminal to commit to Git and push to Github.
@@ -126,7 +156,7 @@ I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my c
 - [Heroku](https://www.heroku.com/home) - Heroku was used to deploy the project.
 - [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - Used to create the logo for the project.
 
-## Python Libraries/Modules
+### Python Libraries/Modules
 
 - [gspread](https://docs.gspread.org/en/v5.7.0/) - used for control of Google Sheets 
 - [OAuthLib](https://oauthlib.readthedocs.io/en/latest/) - needed to access google sheets
@@ -137,9 +167,9 @@ I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my c
 - [tabulate](https://www.statology.org/create-table-in-python/) - Used to create the table to print the data from the player worksheet
 - [colorama](https://pypi.org/project/colorama/) - Used to colour the text in terminal output.
 
-# Testing
+## Testing
 
-## Validation
+### Validation
 
 ### PEP8
 
@@ -147,16 +177,16 @@ I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my c
 
 ![PEP8CI](/assets/images/pep8.png)
 
-## Manual Testing
+### Manual Testing
 
 Please find manual testing file here: [TESTING.md](/TESTING.md)
 
-## Bugs/known issues
+### Bugs/known issues
 
 
-# Deployment
+## Deployment
 
-## Git and GitHub
+### Git and GitHub
 - Code Institute template was used to create GitHub public repository PP4-WHERE_NEXT.
 
 - I developed programm, often commiting changes using terminal commands.
@@ -167,7 +197,7 @@ Please find manual testing file here: [TESTING.md](/TESTING.md)
 
 
 
-## Deployment to Heroku
+### Deployment to Heroku
 - I visited https://heroku.com/ and opened dashboard. Then I clicked button "New" and selected "Create new app" button.
 
 - I entered my app name as "PP4-Where-Next", region to Europe and clicked on "Create app" button
@@ -194,32 +224,32 @@ Please find manual testing file here: [TESTING.md](/TESTING.md)
 
 - The link to my deployed app was shown on screen: [Live Link](https://st-mochtas-fc.herokuapp.com/)
 
-## Local Deployment
+### Local Deployment
 - To make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
 
 - git clone 
 
-## To Fork the Repository
+### To Fork the Repository
 - To make a copy or ‘fork’ the repository
   - Log into GitHub and locate the repository
   - Select the ‘fork’ option to create and copy the original
   Link to Github repository: ![Github](https://github.com/AngMaher/St-Mochtas-FC)
 
-# Future Development
+## Future Development
 
 
-# Credits
+## Credits
 
-## Code
+### Code
 
-## Media
+### Media
 
 - [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - to create my logo
 
-## Resources
+### Resources
 
  - Websites used along with course material were [StackOverFlow](https://stackoverflow.com/questions/18754276/python-for-beginners), and [W3Schools](https://www.w3schools.com/python/)
 
- # Acknowledgements
+ ## Acknowledgements
   
 - I would like to thank my mentor Jubril for his guidance through the project and my many testers (family and friends).
