@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_summernote',
     'crispy_forms',
-    'ckeditor',
+    'ckeditor_uploader',
     'travelblog',
     'bucketlist',
 ]
