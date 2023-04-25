@@ -8,7 +8,7 @@ class List(models.Model):
     user_name = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user_name"
     )
-    title = models.CharField(max_length=300, unique=True)
+    title = models.CharField(max_length=300)
     # planning = models.TextField(default='Add Planning')
     planning = RichTextField(blank=True, null=True)
     updated_on = models.DateTimeField(auto_now=True)
@@ -17,6 +17,7 @@ class List(models.Model):
 
     class Meta:
         ordering = ["created_on"]
+        unique_together = 'user_name', 'title'
 
     def __str__(self):
         return self.title
