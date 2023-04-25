@@ -8,5 +8,5 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(List)
 class ListAdmin(SummernoteModelAdmin):
 
-    search_fields = ['title', 'planning']
+    search_fields = ['title', 'user_name', 'planning']
     summernote_fields = ('planning',)

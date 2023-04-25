@@ -1,18 +1,24 @@
 {% extends "base.html" %}
-{% block title %}Delete Buckelist Item{% endblock %}
+{% block title %}Delete Bucke List Item{% endblock %}
 
 
 {% block content %}
 
-<!-- Form to delete a bucket list item -->
+<!-- Form to Edit bucket list item -->
 {% if user.is_authenticated %}
+    <br><br>
+    <h1 class="offset-md-2">Delete Bucket List Item: </h1>
+    <h3 class="offset-md-2">{{ list.title }}</h3><br>
 
-    <h1>Delete Bucketlist Item</h1>
-    <p>Are you sure you want to delete:</p> 
-    <p>{{ list.title }}</p>
-            
-    <button class="btn btn-info">Delete Item</button>
-    <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+
+    <div class="form-group">
+        <form method="POST" class="col-9 offset-md-2">
+            {% csrf_token %}
+            <strong><p>Are you sure?</p></strong><br>
+            <button class="btn btn-info">Delete</button>
+            <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+        </form>
+    </div>
 {% else %}
     <h2>Please login: 
         <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>

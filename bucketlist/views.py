@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, get_object_or_404
+from django.shortcuts import render, HttpResponse, get_object_or_404, redirect
 from django.views import generic, View
 from .models import List
 from django.urls import reverse_lazy
@@ -19,8 +19,7 @@ class AddListItem(generic.CreateView):
     # fields = ['title', 'user_name', 'done']
 
     # def post(self, request, *args, **kwargs):
-    #     queryset = List.objects.all()
-
+    #     
     #     add_item_form = AddBucketlistForm(data=request.POST)
 
     #     if add_item_form.is_valid():
@@ -30,6 +29,16 @@ class AddListItem(generic.CreateView):
 
     #     def get_object(self):
     #         return self.request.user
+
+
+def add(request):
+    submitted = False
+    if request.method == 'POST':
+        form = AddBucketlistForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your Bucket List Item was added')
+        return render(request, "bucketlist.html")
 
 
 class UpdateListItem(generic.UpdateView):

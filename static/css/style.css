@@ -1,5 +1,11 @@
+:root {
+    --main-blue: #5799e1;
+    --dark-gray: #343434;
+    --background-colour: #fdf8f4;
+}
+
 body {
-    background-color: #fdf8f4;
+    background-color: var(--background-colour);
 }
 
 .light-bg {
@@ -7,19 +13,18 @@ body {
 }
 
 .dark-bg {
-    background-color: #343434;
+    background-color: var(--dark-gray);
 }
 
 .main-bg {
-    background-color: #fdf8f4;
+    background-color: var(--background-colour);
 }
-
 .nav {
     font-size: 22px;
 }
 
 .active {
-    border-bottom: 2px solid #343434;
+    border-bottom: 2px solid var(--dark-gray);
 }
 
 .card {
@@ -37,7 +42,7 @@ body {
 }
 
 .logo {
-    color: #343434;
+    color: var(--dark-gray);
     font-family: 'Noto Sans', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
@@ -52,7 +57,7 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 400%;
     font-stretch: extra-expanded;
-    color:#343434;
+    color: var(--dark-gray);
     position: absolute;
     bottom: 30%;
     left: 45%;
@@ -85,8 +90,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #5799e1;
-    color: #343434;
+    background-color: var(--main-blue);
+    color: var(--dark-gray);
     position: relative;
 }
 
@@ -103,7 +108,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #5799e1;
+    background: var(--main-blue);
     -webkit-transform: skew(10deg);
     -moz-transform: skew(0deg);
     transform: skew(10deg);
@@ -112,12 +117,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #343434;
+    color: var(--dark-gray);
 }
 
 .post-link:hover,
 .page-link {
-    color: #5799e1;
+    color: var(--main-blue);
 }
 
 .post-title {
@@ -126,25 +131,24 @@ body {
 }
 
 .btn-info {
-    background-color: #5799e1;
+    background-color: var(--main-blue);
     font-weight: 600;
 }
 
 .btn-info:hover {
-    background-color: #fdf8f4;
-    color:#5799e1;
+    background-color: var(--background-colour);
+    color: var(--main-blue);
     font-weight: 700;
 }
 .post-subtitle {
     margin-left: 5%;
-    color: #343434;
+    color: var(--dark-gray);
 }
 
 .log-container {
     background-color: rgb(87, 153, 225, 0.3);
     border-radius: 10%;
 }
-
 .btn-log {
     background-color: #5799e1;
     color: #fff;
@@ -157,13 +161,13 @@ body {
 }
 
 .icon-bucketlist {
-    color: #343434;
+    color: var(--dark-gray);
     text-decoration: none;
     word-spacing: normal;
 }
 
 .link {
-    color: #5799e1;
+    color: var(--main-blue);
     text-decoration: none;
 }
 
@@ -174,14 +178,14 @@ body {
 }
 
 .btn-like {
-    color: #343434;
+    color: var(--dark-gray);
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #5799e1;
+    color: var(--main-blue);
     background: transparent;
     border: none;
 }

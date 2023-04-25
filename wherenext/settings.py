@@ -35,7 +35,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['pp4-where-next.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,12 +52,13 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_summernote',
     'crispy_forms',
-    'ckeditor_uploader',
+    'ckeditor',
     'travelblog',
     'bucketlist',
 ]
 
 SITE_ID = 1
+
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 ACCOUNT_FORMS = {
