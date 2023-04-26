@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, get_object_or_404, reverse
+from django.shortcuts import render, HttpResponse, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -51,7 +51,7 @@ class PostContent(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Successfully added a comment.')
+            messages.success(request, 'Successfully added a comment.')
         else:
             comment_form = CommentForm()
 
@@ -75,7 +75,9 @@ class PostLike(View):
 
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
+            messages.success(request, 'You have unliked the post')
         else:
             post.likes.add(request.user)
+            messages.success(request, 'You have liked the post')
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))

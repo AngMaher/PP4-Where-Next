@@ -118,6 +118,13 @@
     </footer>
     <script src="static/JS/script.js"></script>
     <script src="https://kit.fontawesome.com/2b8a10e04d.js" crossorigin="anonymous"></script>
+    <script>
+        setTimeout(function() {
+        let messages = document.getElementById("msg");
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+        }, 3000);
+    </script>
 </body>
 
 </html>

@@ -16,44 +16,37 @@ class AddListItem(generic.CreateView):
     model = List
     form_class = AddBucketlistForm
     template_name = 'userbucketlist/add_list_item.html'
-    # fields = ['title', 'user_name', 'done']
+    success_message = "You have successfully added a new item in your Bucket List!"
 
-    # def post(self, request, *args, **kwargs):
-    #     
-    #     add_item_form = AddBucketlistForm(data=request.POST)
+    def form_valid(self, AddBucketlistForm):
+        response = super().form_valid(AddBucketlistForm)
+        success_message = self.get_success_message(AddBucketlistForm.cleaned_data)
+        if success_message:
+            messages.success(self.request, success_message)
+        return response
 
-    #     if add_item_form.is_valid():
-    #         messages.add_message(request, messages.SUCCESS, 'Successfully added a comment.')
-    #     else:
-    #         Add_item_form = AddBucketlistForm()
-
-    #     def get_object(self):
-    #         return self.request.user
-
-
-def add(request):
-    submitted = False
-    if request.method == 'POST':
-        form = AddBucketlistForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Your Bucket List Item was added')
-        return render(request, "bucketlist.html")
+    def get_success_message(self, cleaned_data):
+        return self.success_message % cleaned_data
 
 
 class UpdateListItem(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_list_item.html'
     fields = ['title', 'done']
+    success_message = "Update has completed successfully!"
+
+    def form_valid(self, AddBucketlistForm):
+        response = super().form_valid(AddBucketlistForm)
+        success_message = self.get_success_message(AddBucketlistForm.cleaned_data)
+        if success_message:
+            messages.success(self.request, success_message)
+        return response
+
+    def get_success_message(self, cleaned_data):
+        return self.success_message % cleaned_data
 
 
-class DeleteListItem(generic.DeleteView):
-    model = List
-    template_name = 'userbucketlist/delete_list_item.html'
-    success_url = reverse_lazy('bucketlist')
-
-
-class StorePlanning(generic.ListView):
+class StorePlanning(generic.DetailView):
     model = List
     queryset = List.objects.all()
     template_name = 'userbucketlist/store_planning.html'
@@ -64,3 +57,21 @@ class UpdatePlan(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_planning.html'
     fields = ['planning']
+    success_message = "Your plan has been updated! You are on your way to complete your dream!"
+
+    def form_valid(self, UpdatePlanningForm):
+        response = super().form_valid(UpdatePlanningForm)
+        success_message = self.get_success_message(UpdatePlanningForm.cleaned_data)
+        if success_message:
+            messages.success(self.request, success_message)
+        return response
+
+    def get_success_message(self, cleaned_data):
+        return self.success_message % cleaned_data
+
+
+def DeleteListItem(request, item_id):
+    list_item = get_object_or_404(List, id=item_id)
+    list_item.delete()
+    messages.warning(request, "Recipe deleted!")
+    return redirect('bucketlist')
