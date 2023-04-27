@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, get_object_or_404, reverse, redirect
+from django.shortcuts import render, HttpResponse, get_object_or_404, reverse, redirect  # noqa
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
@@ -13,6 +13,7 @@ class BlogPosts(generic.ListView):
     paginate_by = 6
 
 
+# Post class for the each blog post
 class PostContent(View):
 
     def get(self, request, slug, *args, **kwargs):

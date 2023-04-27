@@ -28,5 +28,9 @@ class UpdatePlanningForm(forms.ModelForm):
         fields = ['planning']
 
         widgets = {
-            'planning': SummernoteWidget(attrs={'summernote': {'width': '100%', 'height': '300px', 'placeholder': 'Start your planning here'}}),
+            'planning': SummernoteWidget(attrs={'summernote': {
+                'width': '100%',
+                'height': '300px',
+                'placeholder': 'Start your planning here'
+                }}),
         }

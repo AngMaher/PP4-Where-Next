@@ -16,11 +16,12 @@ class AddListItem(generic.CreateView):
     model = List
     form_class = AddBucketlistForm
     template_name = 'userbucketlist/add_list_item.html'
-    success_message = "You have successfully added a new item in your Bucket List!"
+    success_message = "You have successfully added a new item in your Bucket List!"  # noqa
 
     def form_valid(self, AddBucketlistForm):
         response = super().form_valid(AddBucketlistForm)
-        success_message = self.get_success_message(AddBucketlistForm.cleaned_data)
+        success_message = self.get_success_message(
+            AddBucketlistForm.cleaned_data)
         if success_message:
             messages.success(self.request, success_message)
         return response
@@ -37,7 +38,8 @@ class UpdateListItem(generic.UpdateView):
 
     def form_valid(self, AddBucketlistForm):
         response = super().form_valid(AddBucketlistForm)
-        success_message = self.get_success_message(AddBucketlistForm.cleaned_data)
+        success_message = self.get_success_message(
+            AddBucketlistForm.cleaned_data)
         if success_message:
             messages.success(self.request, success_message)
         return response
@@ -57,11 +59,12 @@ class UpdatePlan(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_planning.html'
     fields = ['planning']
-    success_message = "Your plan has been updated! You are on your way to complete your dream!"
+    success_message = "Your plan has been updated! You are on your way to complete your dream!"  # noqa
 
     def form_valid(self, UpdatePlanningForm):
         response = super().form_valid(UpdatePlanningForm)
-        success_message = self.get_success_message(UpdatePlanningForm.cleaned_data)
+        success_message = self.get_success_message(
+            UpdatePlanningForm.cleaned_data)
         if success_message:
             messages.success(self.request, success_message)
         return response
