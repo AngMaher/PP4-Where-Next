@@ -78,6 +78,11 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.category:hover {
+    color: var(--dark-gray);
 }
 
 .masthead {

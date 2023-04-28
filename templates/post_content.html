@@ -58,11 +58,9 @@
 
                             </form>
                             {% else %}
-                            
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ post.number_of_likes }} </span>
-                            
                         </strong>
                     </div>
                     <div class="col-1">
@@ -72,6 +70,7 @@
                         </strong>
                         {% endwith %}
                     </div>
+                    <span><p>Please Login to comment or Like</p></span>     
                 </div>
             </div>
         </div>
@@ -121,11 +120,11 @@
                     </form>
                     {% endif %}
                     {% endif %}
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 {% endblock content %}

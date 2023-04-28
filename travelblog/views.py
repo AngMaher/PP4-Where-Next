@@ -82,3 +82,15 @@ class PostLike(View):
             messages.success(request, 'You have liked the post')
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
+
+
+def CategoryView(request, cats):
+    category_posts = Post.objects.filter(category=cats)
+    return render(request, 'categories.html', {
+        'cats': cats,
+        'category_posts': category_posts,
+        })
+
+
+def AboutView(request):
+    return render(request, 'about.html')
