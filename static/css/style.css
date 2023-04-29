@@ -169,8 +169,32 @@ body {
     color: var(--dark-gray);
     text-decoration: none;
     word-spacing: normal;
+    background-color: #5799e1;
 }
 
+.icon-bucketlist-delete {
+    color: var(--dark-gray);
+    text-decoration: none;
+    word-spacing: normal;
+    background-color: #d8383d;
+}
+
+.bck{
+    background-color: #cad7e1;
+    border: 0.5px solid #343434;
+    border-;
+}
+
+.bck1{
+    background-color: rgba(194, 203, 212, 0.3);
+    border-right: 0.5px solid #343434;
+    border-left: 0.5px solid #343434;
+}
+
+.bck2{
+    background-color: #cad7e1;
+    border: 0.5px solid #343434;
+}
 .link {
     color: var(--main-blue);
     text-decoration: none;
@@ -199,6 +223,9 @@ body {
     background-color: rgb(87, 153, 225, 0.7);
 }
 
+#msg_login {
+    margin-top: 10%;
+}
 @media screen and (max-width: 600px){
     .banner-text {
        font-size: 150%;

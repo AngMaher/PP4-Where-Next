@@ -74,7 +74,17 @@ class UpdatePlan(generic.UpdateView):
 
 
 def DeleteListItem(request, item_id):
-    list_item = get_object_or_404(List, id=item_id)
-    list_item.delete()
-    messages.warning(request, "Recipe deleted!")
-    return redirect('bucketlist')
+    list_item = get_object_or_404(List, pk=item_id)
+    context = {'list_item': list_item}
+
+    if request.method  == 'POST':
+        list_item.delete()
+        return redirect('bucketlist')
+        
+    return render(request, 'userbucketlist/delete_list_item.html', context)
+
+# def DeleteListItem(request, item_id):
+#     list_item = List.objects.get(pk=item_id)
+#     list_item.delete()
+#     messages.warning(request, "Your Bucket List item has now been deleted!")
+#     return redirect('bucketlist')

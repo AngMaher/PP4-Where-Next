@@ -7,17 +7,21 @@
 <!-- Form to Edit bucket list item -->
 {% if user.is_authenticated %}
     <br><br>
-    <h1 class="offset-md-2">Delete Bucket List Item: </h1>
-    <h3 class="offset-md-2">{{ list.title }}</h3><br>
+    <div class="log-container">
+        <h1 class="offset-md-2">Delete Bucket List Item: </h1>
+        <h3 class="offset-md-2">{{ list.title }}</h3><br>
 
 
-    <div class="form-group">
-        <form method="POST" class="col-9 offset-md-2">
-            {% csrf_token %}
-            <strong><p>Are you sure?</p></strong><br>
-            <button class="btn btn-info">Delete</button>
-            <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
-        </form>
+        <div class="form-group">
+            <form action = "{% url 'delete_list_item' list_item.id  %}" method="POST" class="col-9 offset-md-2">
+                {% csrf_token %}
+                <strong><p>Are you sure?</p></strong><br>
+                <input class="btn btn-danger" type="submit" value="YES"/>
+                <!-- <button class="btn btn-danger">Delete</button> -->
+                <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+            </form>
+        </div>
+        <br/><br/>
     </div>
 {% else %}
     <h2>Please login: 

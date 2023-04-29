@@ -66,11 +66,11 @@
                     <div class="col-1">
                         {% with comments.count as total_comments %}
                         <span class="text-secondary"><strong><i class="far fa-comments"></i></strong></span>
-                        <span class="text-secondary"><strong>{{ total_comments }} </strong></span>
+                        <span class="text-secondary"><strong>{{ total_comments }} </strong></span><br/>
                         </strong>
                         {% endwith %}
                     </div>
-                    <span><p>Please Login to comment or Like</p></span>     
+                    <span><p id="mgs_login">Please Login to comment or Like <a href="{% url 'account_login' %}">here</a></p></span>     
                 </div>
             </div>
         </div>
