@@ -8,3 +8,4 @@ class ListAdmin(SummernoteModelAdmin):
 
     search_fields = ['title', 'user_name', 'planning']
     summernote_fields = ('planning',)
+    list_filter = ['user_name']
