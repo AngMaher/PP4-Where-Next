@@ -41,20 +41,15 @@ body {
 }
 
 /* Bucket List */
-.card-list {
-    box-shadow: 5px 5px 5px var(--gray-shadow);
-}
 
 .btn-secondary {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     font-size: 12px;
-
 }
 
 .btn-danger {
     font-size: 12px;
-
 }
 
 .logo {

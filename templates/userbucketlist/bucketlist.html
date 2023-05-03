@@ -32,8 +32,8 @@
                 {% if list.user_name.id == user.id %}
                 {% if forloop.counter is not None %}
                 <div class="col-md-8">
-                    <div class="card-list mb-4">
-                        <div class="card-body-list">
+                    <div class="mb-4">
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">
                             <br />
                             <div>Posted By: <strong>{{list.user_name.username}}</strong> on
                                 <strong>{{list.created_on}}</strong>
@@ -46,7 +46,8 @@
                                 {% endif %}
                                 <br />
                                 <hr>
-                                <span class="bucketlist_options"><small>
+                                <div class="btn-group offset-md-3" role="group" aria-label="bucket">
+                                <!-- <span class="bucketlist_options"><small> -->
                                     <a class="btn btn-secondary" href="{% url 'update_list_item' list.pk %}"><i
                                             class="fas fa-edit"><small> Edit</small></i></a>
                                     <a class="btn btn-secondary"  href="{% url 'store_planning' list.pk %}"><i
@@ -55,9 +56,10 @@
                                             class="fa-solid fa-plane-departure"><small> Add to  Your Plan</small></i></a>
                                     <a class="btn btn-danger"
                                             href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small> Delete</small></i></a>
-                                    </small>
+                                    <!-- </small> -->
                                     <br />
-                                </span>
+                                <!-- </span> -->
+                                </div>
                                 <br />
                             </div>
                         </div>
