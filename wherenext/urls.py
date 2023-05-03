@@ -22,3 +22,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('bucketlist/', include('bucketlist.urls'), name='bucketlist_urls'),
 ]
+
+handler404 = "travelblog.views.handler_404"
+handler404 = "travelblog.views.handler_403"
+handler404 = "travelblog.views.handler_500"

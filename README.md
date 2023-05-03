@@ -38,6 +38,8 @@ You can find the live appliaction here: <a href ='https://pp4-where-next.herokua
 
   - [Developer Goals](#developer-goals)
 
+
+
 - [Logic and Features](#logic-and-features)
 
   - [Logic](#logic)
@@ -136,13 +138,10 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 ### The Ideal User/Persona
 
-
-
-**Who**
-
-**What**:
-
-**Why**: :
+- This site is developed for people who have a thirst for travelling.
+- They have a keen interest in learning about new places and are always on the lookout for new adventures.
+- They like planning and want somewhere to keep their 'Travel Bucket List' and somewhere to plan, so that their
+Bucket List dream becomes a reality.
 
 ### User Goals
   - As a Site User I can view a list of posts so that I can choose which post I want to view. `(MUST HAVE)`
@@ -191,8 +190,6 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 
 ## Technology
-
-<img height="50" src="docs/readme/python_django.png">  <img height="50" src="README/elephantsql.png">  <img height="50" src="README/cloudinary.png"> <img height="50" src="README/html.png">  <img height="50" src="README/css.png">  <img height="50" src="README/bootstrap.png">  <img height="50" src="README/js.png">  <img height="50" src="README/gitpod.png">  <img height="50" src="README/github.png">
 
 ### Languages Used
 

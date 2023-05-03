@@ -94,3 +94,23 @@ def CategoryView(request, cats):
 
 def AboutView(request):
     return render(request, 'about.html')
+
+
+# 404 Handler
+def phandler_404(request, exception):
+    return render(request, '404.html', status=404)
+
+
+# 500 Handler
+def handler_500(request, exception):
+    response = render(request, '500.html')
+    response.status_code = 500
+    return response
+
+
+# 403 Handler
+def handler_403(request, *args, **argv):
+    response = render_to_response('403.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 403
+    return response
