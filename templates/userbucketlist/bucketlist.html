@@ -31,9 +31,9 @@
                 {% for list in object_list %}
                 {% if list.user_name.id == user.id %}
                 {% if forloop.counter is not None %}
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <div class="card-list mb-4">
-                        <div class="card-body-list offset-md-2">
+                        <div class="card-body-list">
                             <br />
                             <div>Posted By: <strong>{{list.user_name.username}}</strong> on
                                 <strong>{{list.created_on}}</strong>

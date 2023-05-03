@@ -1,6 +1,7 @@
 :root {
     --main-blue: #5799e1;
     --dark-gray: #343434;
+    --gray-shadow: rgb(52, 52, 52, 0.5);
     --background-colour: #fff;
     --messages: rgb(230, 65, 65, 0.6);
 }
@@ -28,6 +29,7 @@ body {
     border-bottom: 2px solid var(--dark-gray);
 }
 
+/* blog post card */
 .card {
     border: none;
     background-color: transparent;
@@ -37,13 +39,22 @@ body {
     background-color: var(--messages);
     font-size: 20px;
 }
+
+/* Bucket List */
 .card-list {
-    background-color: rgba(194, 203, 212, 0.3);
-    border-radius: 10%;
+    box-shadow: 5px 5px 5px var(--gray-shadow);
 }
 
-.edit-delete-icon {
-    word-spacing: 60px;
+.btn-secondary {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+
+}
+
+.btn-danger {
+    font-size: 12px;
+
 }
 
 .logo {
