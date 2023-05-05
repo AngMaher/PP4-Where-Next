@@ -28,13 +28,8 @@
         <div class="col-12 col-md-8 mt-3 offset-md-2 rounded shadow-lg">
             {% if user.is_authenticated %}
                 {% if list.user_name.id == user.id %}
-                    {% if not planning %}
-                        <br/>
-                        <h5>No Plans Yet! Hit the "Edit Plan" button to start your planning!!</h5>
-                    {% else %}
-                        <h5>Your Plan for: {{ list.title }}</h5>
-                        <p>{{ list.planning | safe }}</p>
-                    {% endif %}
+                    <h5>Your Plan for: {{ list.title }}</h5>
+                    <p>{{ list.planning | safe }}</p>
                 {% endif %}
                 <div class="offset-md-3">
                 <br /><br />
