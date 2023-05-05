@@ -1,6 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Buckelist{% endblock %}
-{% load static %}
+{% block title %}Bucket List{% endblock %}
 
 {% block content %}
 <!-- Masthead and image for display bucketlist item page -->
@@ -29,48 +28,39 @@
         <div class="col-12 col-sm-12 mt-3 offset-md-2">
             <div class="row">
                 {% for list in object_list %}
-                {% if list.user_name.id == user.id %}
-                {% if forloop.counter is not None %}
-                <div>
-                    <div class="mb-4">
-                        <div class="col-12 col-md-8 shadow-lg p-3 mb-5 bg-white rounded">
+                    {% if list.user_name.id == user.id %}
+                        <div class="mb-4">
+                            <div class="col-12 col-md-8 shadow-lg p-3 mb-5 bg-white rounded">
                             <br />
-                            <div>Posted By: <strong>{{list.user_name.username}}</strong> on
+                                <div>Posted By: <strong>{{list.user_name.username}}</strong> on
                                 <strong>{{list.created_on}}</strong>
                                 <hr>
                                 {% if list.done %}
-                                <i class="fa-solid fa-check fa-lg"></i> <strike><strong>
-                                        {{ list.title }}</strong></strike>
+                                    <i class="fa-solid fa-check fa-lg"></i> <strike><strong>
+                                            {{ list.title }}</strong></strike>
                                 {% else %}
-                                <strong>{{ list.title }}</strong>
+                                    <strong>{{ list.title }}</strong>
                                 {% endif %}
-                                <br />
-                                <hr>
-                                <div class="btn-group offset-md-3" role="group" aria-label="bucket">
-                                <!-- <span class="bucketlist_options"><small> -->
-                                    <a class="btn btn-secondary" href="{% url 'update_list_item' list.pk %}"><i
-                                            class="fas fa-edit"><small> Edit</small></i></a>
-                                    <a class="btn btn-secondary"  href="{% url 'store_planning' list.pk %}"><i
-                                            class="fa-solid fa-plane-departure"><small> View Plan</small></i></a>
-                                    <a class="btn btn-secondary" href="{% url 'update_planning' list.pk %}"><i
-                                            class="fa-solid fa-plane-departure"><small> Add to  Your Plan</small></i></a>
-                                    <a class="btn btn-danger"
-                                            href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small> Delete</small></i></a>
-                                    <!-- </small> -->
+                                    <br /><hr>
+                                    <div class="btn-group offset-md-3" role="group" aria-label="bucket">
+                                        <a class="btn btn-secondary" href="{% url 'update_list_item' list.pk %}"><i
+                                                class="fas fa-edit"><small> Edit</small></i></a>
+                                        <a class="btn btn-secondary"  href="{% url 'view_planning' list.pk %}"><i
+                                                class="fa-solid fa-plane-departure"><small> View Plan</small></i></a>
+                                        <a class="btn btn-secondary" href="{% url 'update_planning' list.pk %}"><i
+                                                class="fa-solid fa-plane-departure"><small> Add to  Your Plan</small></i></a>
+                                        <a class="btn btn-danger"
+                                                href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small> Delete</small></i></a>
+                                    </div>
                                     <br />
-                                <!-- </span> -->
                                 </div>
-                                <br />
                             </div>
                         </div>
-                    </div>
-                </div>
-                <br />
-                {% else %}
-                <h1>No Items to dsplay</h1>
-                <p>Create a new Item</p>
-                {% endif %}
-                {% endif %}
+                        <br />
+                    {% endif %}
+                {% empty %}
+                    <h1>No Items to dsplay</h1>
+                    <p>Create a new Item</p>
                 {% endfor %}
                 <div class="offset-md-3">
                     <br /><br />
@@ -81,9 +71,5 @@
             </div>
         </div>
     </div>
-    {% else %}
-    <h2>Please login:
-        <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
-    </h2>
     {% endif %}
     {%endblock%}

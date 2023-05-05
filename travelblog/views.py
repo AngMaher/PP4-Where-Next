@@ -110,7 +110,6 @@ def handler_500(request, exception):
 
 # 403 Handler
 def handler_403(request, *args, **argv):
-    response = render_to_response('403.html', {},
-                                  context_instance=RequestContext(request))
+    response = render_to_response('403.html', {}, context_instance=RequestContext(request))
     response.status_code = 403
     return response

@@ -48,10 +48,10 @@ class UpdateListItem(generic.UpdateView):
         return self.success_message % cleaned_data
 
 
-class StorePlanning(generic.DetailView):
+class ViewPlanning(generic.DetailView):
     model = List
     queryset = List.objects.all()
-    template_name = 'userbucketlist/store_planning.html'
+    template_name = 'userbucketlist/view_planning.html'
     fields = ['planning']
 
 
@@ -77,10 +77,10 @@ def DeleteListItem(request, item_id):
     list_item = get_object_or_404(List, pk=item_id)
     context = {'list_item': list_item}
 
-    if request.method  == 'POST':
+    if request.method == 'POST':
         list_item.delete()
         return redirect('bucketlist')
-        
+
     return render(request, 'userbucketlist/delete_list_item.html', context)
 
 # def DeleteListItem(request, item_id):
