@@ -25,7 +25,7 @@
 <!-- Dsiplay the contents of the plan -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-8 mt-3 offset-md-2 rounded shadow-lg">
+        <div class="col-12 col-md-8 p-3 shadow-lg offset-md-2 log-container">
             {% if user.is_authenticated %}
                 {% if list.user_name.id == user.id %}
                     <h5>Your Plan for: {{ list.title }}</h5>

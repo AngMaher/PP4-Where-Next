@@ -25,12 +25,12 @@
 {% if user.is_authenticated %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-sm-12 mt-3 offset-md-2">
+        <div class="col-12 col-sm-12 mt-4 offset-md-2">
             <div class="row">
                 {% for list in object_list %}
                     {% if list.user_name.id == user.id %}
                         <div>
-                            <div class="col-12 col-md-8 shadow-lg p-3 mb-4 bg-white rounded">
+                            <div class="col-12 col-md-8 p-3 mt-4 shadow-lg log-container rounded">
                             <br />
                                 <div>Posted By: <strong>{{list.user_name.username}}</strong> on
                                 <strong>{{list.created_on}}</strong>

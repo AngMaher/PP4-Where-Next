@@ -6,11 +6,11 @@
 
 <!-- Form to add to the travel plan -->
 {% if user.is_authenticated %}
-    <h1 class="offset-md-2">Plan your Trip Here for:</h1>
-    <h5 class="offset-md-2">{{ list.title }}</h5>
 
-    <div class="form-group">
-        <form method="POST" class="col-9 offset-md-2">
+    <div class="form-group p-3 col-12 col-md-6 shadow-lg offset-md-2 log-container"><br/>
+        <h1>Plan your Trip Here for:</h1>
+        <h5>{{ list.title }}</h5><br/>
+        <form method="POST" class="col-12">
             {% csrf_token %}
             {{ form.media }}
             {{ form | crispy }}
@@ -21,8 +21,7 @@
             <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
             <a href="{% url 'view_planning' list.pk %}" class="btn btn-info">Back to View Plan</a>
         </form>
-
-    </div>
+    </div><br/><br/>
 {% else %}
     <h2>Please login: 
         <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>

@@ -82,9 +82,3 @@ def DeleteListItem(request, item_id):
         return redirect('bucketlist')
 
     return render(request, 'userbucketlist/delete_list_item.html', context)
-
-# def DeleteListItem(request, item_id):
-#     list_item = List.objects.get(pk=item_id)
-#     list_item.delete()
-#     messages.warning(request, "Your Bucket List item has now been deleted!")
-#     return redirect('bucketlist')

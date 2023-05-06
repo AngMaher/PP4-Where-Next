@@ -7,16 +7,17 @@
 {% if user.is_authenticated %}
     <!-- Form to add an item to user bucket list -->
     <br/>
-    <h1 class="offset-md-2">Add Bucketlist Item</h1>
-
-    <div class="form-group">
-        <form method="POST" class="offset-md-2">
+    <div class="form-group p-3 col-12 col-md-6 shadow-lg offset-md-3 log-container">
+        <br/>
+        <h1>Add Bucketlist Item</h1><br/>
+        <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
             <div>
                 <button class="btn btn-info">Add</button>
                 <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
             </div>
+            <br/>
         </form>
     </div>
 
