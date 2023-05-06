@@ -4,8 +4,22 @@
 {% block content %}
 
 
+
 {% if category_posts %}
-    <h1>Category: {{ post.get_category_display}} </h1>
+
+    <h1>Category: 
+        {% if cats == 0 %}
+            General
+        {% elif cats == 1 %}
+            Tips
+        {% elif cats == 2 %}
+            Review
+        {% elif cats == 3 %}
+            Destinations
+        {% else %}
+            Not a valid category
+        {% endif %}
+    </h1>
 
 
 
@@ -65,6 +79,6 @@
         {% endif %}
     </div>
 {% else %}
-    <h2>Sorry This Category doesnt exist... </h2>
+    <h2>Sorry This Category does not exist... </h2>
 {% endif %}
 {%endblock%}
