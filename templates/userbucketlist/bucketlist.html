@@ -29,8 +29,8 @@
             <div class="row">
                 {% for list in object_list %}
                     {% if list.user_name.id == user.id %}
-                        <div class="mb-4">
-                            <div class="col-12 col-md-8 shadow-lg p-3 mb-5 bg-white rounded">
+                        <div>
+                            <div class="col-12 col-md-8 shadow-lg p-3 mb-4 bg-white rounded">
                             <br />
                                 <div>Posted By: <strong>{{list.user_name.username}}</strong> on
                                 <strong>{{list.created_on}}</strong>

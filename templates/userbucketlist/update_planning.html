@@ -6,7 +6,8 @@
 
 <!-- Form to add to the travel plan -->
 {% if user.is_authenticated %}
-    <h1 class="offset-md-2">Plan your Trip Here</h1>
+    <h1 class="offset-md-2">Plan your Trip Here for:</h1>
+    <h5 class="offset-md-2">{{ list.title }}</h5>
 
     <div class="form-group">
         <form method="POST" class="col-9 offset-md-2">
