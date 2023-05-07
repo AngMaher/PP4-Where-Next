@@ -404,19 +404,7 @@ Table: **List**
 
 ## Testing
 
-### Validation
-
-### PEP8
-
-- [PEP8CI](https://pep8ci.herokuapp.com/) - This was used test the code. No errors where found in the code. 
-
-![PEP8CI](/assets/images/pep8.png)
-
-### Manual Testing
-
-Please find manual testing file here: [TESTING.md](/TESTING.md)
-
-### Bugs/known issues
+Please find Testing here: [Testing](TESTING.md)
 
 
 ## Deployment
