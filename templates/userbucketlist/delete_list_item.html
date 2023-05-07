@@ -8,8 +8,7 @@
 {% if user.is_authenticated %}
     <br><br>
     <div class="col-12 col-md-6 shadow-lg offset-md-3 log-container"><br/><br/>
-        <h1 class="offset-md-2">Delete Bucket List Item: </h1>
-        <h3 class="offset-md-2">{{ list.title }}</h3><br>
+        <h2 class="offset-md-2">Delete Bucket List Item</h2>
 
 
         <div class="form-group">
@@ -17,7 +16,6 @@
                 {% csrf_token %}
                 <strong><p>Are you sure?</p></strong><br>
                 <input class="btn btn-danger" type="submit" value="YES"/>
-                <!-- <button class="btn btn-danger">Delete</button> -->
                 <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
             </form>
         </div>

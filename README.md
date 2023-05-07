@@ -160,7 +160,7 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
     --messages: rgb(230, 65, 65, 0.6);
 }
 ```
-
+[Back to top &uarr;](#contents)
 
 # Agile 
 
@@ -201,7 +201,7 @@ Bucket List dream becomes a reality.
  - As a Site User I can save a post onto my account so that I can have a list of the most relevant posts to read later `(COULD HAVE)`
 
 
-
+[Back to top &uarr;](#contents)
 
 
 # Logic and Features
@@ -211,92 +211,166 @@ Bucket List dream becomes a reality.
 
 ## Database structure
 
+### Data Model
+
+
+Table: **Post**
+
+| **PK** | **id** (unique) | Type | Notes |
+
+
+
+
+Table: **Comment**
+
+| **PK** | **id** (unique) | Type | Notes |
+| --- | --- | --- | --- |
+
+***
+
+
+
+Table: **List**
+
+| **PK** | **id** (unique) | Type | Notes |
+| --- | --- | --- | --- |
+
+***
+
+
+[Back to top &uarr;](#contents)
+
 
 ## Features
 
-- **About Page**
+- ### **About Page**
   - This is a page to tell the user about the site, about who created the site and show an example of a bucket list they could have if they sign up.
 
-  ![about page](/media/readme/about-page.png)
-  ![example of bucket list]()
+<details>
+    <summary>Click to View About Page</summary>
 
-- **Home Page**
+  ![about page](/media/readme/about-page.png)
+  ![example of bucket list](/media/readme/example-bucket-list.png)
+</details>
+
+- ### **Home Page**
   - This is the blog page, all user logged in or not see this page and get to scroll through the list of blogs.
 
-  ![Blog Page](/media/readme/home-page.png)
+<details>
+    <summary>CLick to View Home Page</summary>
 
- - **Blog Content Page**
+  ![Blog Page](/media/readme/home-page.png)
+</details>
+
+ - ### **Blog Content Page**
   - This page shows the main content of any blog the user wishes to read.
+<details>
+    <summary>Click to View Blog Content Page</summary>
 
   ![Content Page](/media/readme/blog-content.png)
+</details>
 
-- **Register New User**
+- ### **Register New User**
   - This is where a new user can register to the site.
+<details>
+    <summary>Click here to View Registration Page</summary>
 
   ![register](/media/readme/register.png)
+</details>
 
-- **Sign In** 
+- ### **Sign In** 
   - This is where the user signs in who already has an account.
+
+<details>
+    <summary>Click here to View Sign-in Page</summary>
 
   ![sign in](/media/readme/sign-in.png)
+</details>
 
-- **Log Out** 
+- ### **Log Out** 
   - This is where the user signs in who already has an account.
+<details>
+    <summary>Click here to View Log Out Page</summary>
 
   ![log out](/media/readme/log-out.png)
+</details>
 
-- **Bucket List Page**
+- ### **Bucket List Page**
   - This page show the logged in user all their own bucket list items.
 
-  ![bucket list](/media/readme/bucket-list.png)
+<details>
+    <summary>Clic here to View the Bucket List</summary>
 
-- **Add a Bucket List Item**
+  ![bucket list](/media/readme/bucket-list.png)
+</details>
+
+- ### **Add a Bucket List Item**
   - This page allows the logged in user to add a bucket list item.
 
-  ![Add bucket list](/media/readme/add-bucket-item.png)
+<details>
+    <summary>Click here to View Adding a Bucket List Item</summary>
 
-- **Edit a Bucket List Item**
+  ![Add bucket list](/media/readme/add-bucket-item.png)
+</details>
+
+- ### **Edit a Bucket List Item**
   - This page allows the logged in user to edit a bucket list item.
+<details>
+<summary>Click here to View Update Bucket List Item</summary>
 
   ![edit bucket list](/media/readme/update-bucket-item.png)
+</details>
 
-- **Add a plan to one bucket list item**
+- ### **Add a plan to one bucket list item**
   - This page allows the logged in user to add content to the bucket list item, allowing them to save information, links etc to help them plan how to make it reality.
+<details>
+<summary>Click here to View Add/Edit Plan</summary>
 
-  ![plan bucket list]()
+  ![plan bucket list](/media/readme/edit-plan.png)
+</details>
 
-- **View the plan to one bucket list item**
+- ### **View the plan to one bucket list item**
   - This page allows the logged in user to view their plan on one bucket list item like a mood board to see how thier plan is coming along.
+<details>
+<summary>Click here to View the Plan Page</summary>
 
-  ![plan bucket list]()
+  ![plan bucket list](/media/readme/view-plan.png)
+</details>
 
-- **Delete a Bucket List Item**
+- ### **Delete a Bucket List Item**
   - This page allows the logged in user to delete a bucket list item.
+<details>
+<summary>Click here to View Delete Item Page</summary>
 
-  ![delete bucket list]()
+  ![delete bucket list](/media/readme/delete-item.png)
+</details>
 
-- **Footer**
+- ### **Footer**
   - The footer of the site is kept simple with lo=inks to all socials.
+<details>
+<summary>Click here to View the Footer</summary>
 
   ![footer](/media/readme/footer.png)
+</details>
 
-- **Nav Bar When Logged Out**
+- ### **Nav Bar When Logged Out**
   - The navigation bar when user is not logged in.
-  
-  ![logged out nav]()
+<details>
+<summary>Click here to View the Log Out Page</summary>
 
-- **Nav Bar When Logged In**
+  ![logged out nav](/media/readme/nav-logged-out.png)
+</details>
+
+- ### **Nav Bar When Logged In**
   - When a user logs in the nav bar changes to show the bucket list and also to welcome them by name.
-  
-  ![logged in nav]()
 
+<details>
+  <summary>Click here to see the Log In Page</summary>
 
+  ![logged in nav](/media/readme/nav-logged-in.png)
+</details>
 
-
-
-
-
-
+[Back to top &uarr;](#table-of-contents)
 
 ## Technology
 

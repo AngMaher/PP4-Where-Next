@@ -9,7 +9,7 @@ class List(models.Model):
         User, on_delete=models.CASCADE, related_name="user_name"
     )
     title = models.CharField(max_length=300)
-    planning = RichTextField(blank=True, null=False)
+    planning = RichTextField(blank=True, null=True)
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
     done = models.BooleanField(null=False, blank=False, default=False)
