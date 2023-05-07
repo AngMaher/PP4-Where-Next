@@ -28,7 +28,15 @@ body {
 .active {
     border-bottom: 2px solid var(--dark-gray);
 }
+.footer-link {
+    color: var(--background-colour);
+    font-size: 20px;
+}
 
+.footer-link:hover {
+    color: var(--main-blue);
+    font-size: 23px;
+}
 /* all headings gray and capitalised */
 h1, h2, h3 {
     color: var(--dark-gray);
@@ -229,6 +237,7 @@ h1, h2, h3 {
 #msg_login {
     margin-top: 10%;
 }
+
 @media screen and (max-width: 600px){
     .banner-text {
        font-size: 150%;
