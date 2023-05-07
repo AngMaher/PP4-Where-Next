@@ -38,8 +38,6 @@ You can find the live appliaction here: <a href ='https://pp4-where-next.herokua
 
   - [Developer Goals](#developer-goals)
 
-
-
 - [Logic and Features](#logic-and-features)
 
   - [Logic](#logic)
@@ -97,18 +95,48 @@ You can find the live appliaction here: <a href ='https://pp4-where-next.herokua
 - [Acknowledgements](#acknowledgements)
 
 
-## User Experience
+# User Experience
 
 I wanted to keep the design clean, clear and simple to show a contempary and uncluttered design.  The site is mainly off white for the background and blue a colour to premote travel.
 
-### Wireframes
+## Wireframes
 
-![blog page](/media/readme/blogview.png)
-![blog content](/media/readme/blogcontent.png)
-![bucketlist](/media/readme/bucketlist.png)
-![sign-in page](/media/readme/signin.png)
+I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-### Colour Scheme
+### Home Page Wireframe
+
+<details>
+<summary>Click to View Home Page wireframes</summary>
+
+![blog page](/media/readme/wire-blogview.png)
+</details>
+
+
+### Blog Content Page
+
+<details>
+<summary>Click to View Blog Content wireframes</summary>
+
+![blog content](/media/readme/wire-blogcontent.png)
+</details>
+
+### Bucket List Wireframe
+
+<details>
+<summary>Click to View Bucket List wireframes</summary>
+
+![bucketlist](/media/readme/wire-bucketlist.png)
+</details>
+
+### Home Page Wireframe
+
+<details>
+<summary>Click to View Signin Page wireframes</summary>
+
+![sign-in page](/media/readme/wire-signin.png)
+</details>
+
+## Colour Scheme
 
 I decided to keep the website bright with a main colur of blue throughout the site. 
 
@@ -118,7 +146,7 @@ I decided to keep the website bright with a main colur of blue throughout the si
   - #E64141 - Orange, this colour is used for the many massages.
 
 
-![colours used](/media/readme/Where-Next-Colours.png)
+![colours used](/media/readme/colours.png)
 
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
 
@@ -134,16 +162,16 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 ```
 
 
-## Agile 
+# Agile 
 
-### The Ideal User/Persona
+## The Ideal User/Persona
 
 - This site is developed for people who have a thirst for travelling.
 - They have a keen interest in learning about new places and are always on the lookout for new adventures.
 - They like planning and want somewhere to keep their 'Travel Bucket List' and somewhere to plan, so that their
 Bucket List dream becomes a reality.
 
-### User Goals
+## User Goals
   - As a Site User I can view a list of posts so that I can choose which post I want to view. `(MUST HAVE)`
   - As a Site User I can create and account so that Extend the features of the website to comment/like and create my own bucket list. `(MUST HAVE)`
   - As a Site User/ Admin I can view likes on posts so that I can see which posts are popular. `(MUST HAVE)`
@@ -159,7 +187,7 @@ Bucket List dream becomes a reality.
   - As a Site User I can View mood-board/plan so that I can view my plan so far without having to go into edit mode. `(SHOULD HAVE)`
   - As a Site User I can call up all blogs for a certain category so that I can filter the blogs to my needs `(SHOULD HAVE)`
 
-### Developer Goals
+## Developer Goals
 
  - As a Site Admin I can create, read and delete posts so that I can manage my blog content. `(MUST HAVE)`
  - As a Site Admin I can approve and disapprove comments so that I can filter out objectionable comments. `(SHOULD HAVE)`
@@ -168,7 +196,7 @@ Bucket List dream becomes a reality.
  - As a Site Admin I can filter the comments by approved and not approve so that I can have a list of all unapproved comments together `(MUST HAVE)`
  - As a Site Admin I can search through posts, comments and Bucket List Items so that I can find what I am looking for with ease `(MUST HAVE)`
 
- ### Goals not completed
+ ## Goals not completed
 
  - As a Site User I can save a post onto my account so that I can have a list of the most relevant posts to read later `(COULD HAVE)`
 
@@ -176,15 +204,96 @@ Bucket List dream becomes a reality.
 
 
 
-## Logic and Features
+# Logic and Features
 
-### Logic
-
-
-### Database structure
+## Logic
 
 
-### Features
+## Database structure
+
+
+## Features
+
+- **About Page**
+  - This is a page to tell the user about the site, about who created the site and show an example of a bucket list they could have if they sign up.
+
+  ![about page](/media/readme/about-page.png)
+  ![example of bucket list]()
+
+- **Home Page**
+  - This is the blog page, all user logged in or not see this page and get to scroll through the list of blogs.
+
+  ![Blog Page](/media/readme/home-page.png)
+
+ - **Blog Content Page**
+  - This page shows the main content of any blog the user wishes to read.
+
+  ![Content Page](/media/readme/blog-content.png)
+
+- **Register New User**
+  - This is where a new user can register to the site.
+
+  ![register](/media/readme/register.png)
+
+- **Sign In** 
+  - This is where the user signs in who already has an account.
+
+  ![sign in](/media/readme/sign-in.png)
+
+- **Log Out** 
+  - This is where the user signs in who already has an account.
+
+  ![log out](/media/readme/log-out.png)
+
+- **Bucket List Page**
+  - This page show the logged in user all their own bucket list items.
+
+  ![bucket list](/media/readme/bucket-list.png)
+
+- **Add a Bucket List Item**
+  - This page allows the logged in user to add a bucket list item.
+
+  ![Add bucket list](/media/readme/add-bucket-item.png)
+
+- **Edit a Bucket List Item**
+  - This page allows the logged in user to edit a bucket list item.
+
+  ![edit bucket list](/media/readme/update-bucket-item.png)
+
+- **Add a plan to one bucket list item**
+  - This page allows the logged in user to add content to the bucket list item, allowing them to save information, links etc to help them plan how to make it reality.
+
+  ![plan bucket list]()
+
+- **View the plan to one bucket list item**
+  - This page allows the logged in user to view their plan on one bucket list item like a mood board to see how thier plan is coming along.
+
+  ![plan bucket list]()
+
+- **Delete a Bucket List Item**
+  - This page allows the logged in user to delete a bucket list item.
+
+  ![delete bucket list]()
+
+- **Footer**
+  - The footer of the site is kept simple with lo=inks to all socials.
+
+  ![footer](/media/readme/footer.png)
+
+- **Nav Bar When Logged Out**
+  - The navigation bar when user is not logged in.
+  
+  ![logged out nav]()
+
+- **Nav Bar When Logged In**
+  - When a user logs in the nav bar changes to show the bucket list and also to welcome them by name.
+  
+  ![logged in nav]()
+
+
+
+
+
 
 
 

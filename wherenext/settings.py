@@ -78,6 +78,13 @@ MESSAGE_TAGS = {
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': None,
+        'width': 'auto',
+            },
+        }
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

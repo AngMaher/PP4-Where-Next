@@ -7,15 +7,15 @@
 <!-- Form to add to the travel plan -->
 {% if user.is_authenticated %}
 
-    <div class="form-group p-3 col-12 col-md-6 shadow-lg offset-md-2 log-container"><br/>
+    <div class="form-group p-3 offset-md-1 col-12 col-md-10 shadow-lg log-container"><br/>
         <h1>Plan your Trip Here for:</h1>
         <h5>{{ list.title }}</h5><br/>
-        <form method="POST" class="col-12">
+        <form method="POST" class="col-12 col-md-12">
             {% csrf_token %}
             {{ form.media }}
             {{ form | crispy }}
 
-            <div id="summernote"></div>
+            <div id="summernote" max-width="100%"></div>
             <br/>
             <button class="btn btn-info">Update</button>
             <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>

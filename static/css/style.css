@@ -211,12 +211,6 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
-.link:hover,
-.link:active {
-    color: #f38b4a;
-    text-decoration: underline;
-}
-
 .btn-like {
     color: var(--dark-gray);
     border: none;
@@ -231,7 +225,7 @@ h1, h2, h3 {
 }
 
 .alert-success {
-    background-color: rgb(87, 153, 225, 0.7);
+    background-color: var(--messages);
 }
 
 #msg_login {
