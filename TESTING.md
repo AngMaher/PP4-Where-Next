@@ -31,29 +31,37 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2F) | ![screenshot](documentation/testing/html-validation-home.png) | Pass: No Errors |
 | Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing/html-validation-sign-up.png) | Pass: No Errors |
 | Log In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing/html-validation-sign-in.png) | Pass: No Errors |
-| Forgot Password | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-forgot-password.png) | Pass: No Errors |
-| Following Feed | n/a | ![screenshot](documentation/testing/html-validation-feed.png) | Pass: No Errors |
+| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-forgot-password.png) | Pass: No Errors |
+| Blog | n/a | ![screenshot](documentation/testing/html-validation-feed.png) | Pass: No Errors |
 | All Posts Feed | n/a | ![screenshot](documentation/testing/html-validation-all-posts-feed.png) | Pass: No Errors |
-| Messaging Inbox | n/a | ![screenshot](documentation/testing/html-validation-inbox.png) | Pass: No Errors |
+| Blog Content | n/a | ![screenshot](documentation/testing/html-validation-inbox.png) | Pass: No Errors |
 | Messaging Thread | n/a | ![screenshot](documentation/testing/html-validation-message-thread.png) | Pass: No Errors |
-| Create Thread | n/a | ![screenshot](documentation/testing/html-validation-create-thread.png) | Pass: No Errors |
-| User Profile | n/a | ![screenshot](documentation/testing/html-validation-user-profile.png) | Pass: No Errors |
-| Other Profile | n/a | ![screenshot](documentation/testing/html-validation-other-profile.png) | Pass: No Errors |
-| Edit Profile | n/a | ![screenshot](documentation/testing/html-validation-edit-profile.png) | Pass: No Errors |
-| Followers List | n/a | ![screenshot](documentation/testing/html-validation-followers-list.png) | Pass: No Errors |
+| Bucket List | n/a | ![screenshot](documentation/testing/html-validation-create-thread.png) | Pass: No Errors |
+| Add Item | n/a | ![screenshot](documentation/testing/html-validation-user-profile.png) | Pass: No Errors |
+| Edit Item| n/a | ![screenshot](documentation/testing/html-validation-other-profile.png) | Pass: No Errors |
+| Add Plan | n/a | ![screenshot](documentation/testing/html-validation-edit-profile.png) | Pass: No Errors |
+| Edit Plan | n/a | ![screenshot](documentation/testing/html-validation-followers-list.png) | Pass: No Errors |
 | Individual Post | n/a | ![screenshot](documentation/testing/html-validation-individual-post.png) | Pass: No Errors |
-| Delete Post | n/a | ![screenshot](documentation/testing/html-validation-delete-post.png) | Pass: No Errors |
-| Edit Comment | n/a | ![screenshot](documentation/testing/html-validation-edit-comment.png) | Pass: No Errors |
-| Delete Comment | n/a | ![screenshot](documentation/testing/html-validation-delete-comment.png) | Pass: No Errors |
-| Admin Panel | n/a | ![screenshot](documentation/testing/html-validation-admin-panel.png) | Pass: No Errors |
-| Search | n/a | ![screenshot](documentation/testing/html-validation-search.png) | Pass: No Errors |
+| Delete Bucket List item | n/a | ![screenshot](documentation/testing/html-validation-delete-post.png) | Pass: No Errors ||
 | Sign Out | n/a | ![screenshot](documentation/testing/html-validation-sign-out.png) | Pass: No Errors |
 
 ### PEP8
 
 - [PEP8CI](https://pep8ci.herokuapp.com/) - This was used test the code. No errors where found in the code. 
 
-![PEP8CI](/assets/images/pepbucketlist-admin.png)
+| File | folder/app | Screenshot | Notes |
+| --- | --- | --- | --- |
+| admin.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-admin.png) | No errors found |
+| apps.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-apps.png) | No errors found |
+| forms.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-forms.png) | No errors found |
+| models.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-models.png) | No errors found |
+
+| admin.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-admin.png) | No errors found |
+| apps.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-apps.png) | No errors found |
+| forms.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-forms.png) | No errors found |
+| models.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-models.png) | No errors found |
+
+
 
 ### Manual Testing
 

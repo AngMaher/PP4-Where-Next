@@ -17,9 +17,10 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://images.pexels.com/photos/3355734/pexels-photo-3355734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                                    src="https://images.pexels.com/photos/3355734/pexels-photo-3355734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                                            alt="placeholder image of beach and swing chair">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="thumbnail image for blog post">
                                 {% endif %}
                                 <div class="image-flash">
                                     <a href="{% url 'category' post.category %}" class="category">Category: {{ post.get_category_display}}</a>
