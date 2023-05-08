@@ -4,7 +4,6 @@ from ckeditor.widgets import CKEditorWidget
 
 
 class AddBucketlistForm(forms.ModelForm):
-    panning = forms.CharField(widget=CKEditorWidget())
 
     class Meta:
         model = List

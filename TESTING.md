@@ -51,16 +51,20 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 
 | File | folder/app | Screenshot | Notes |
 | --- | --- | --- | --- |
-| admin.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-admin.png) | No errors found |
-| apps.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-apps.png) | No errors found |
-| forms.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-forms.png) | No errors found |
-| models.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-models.png) | No errors found |
-
-| admin.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-admin.png) | No errors found |
-| apps.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-apps.png) | No errors found |
-| forms.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-forms.png) | No errors found |
-| models.py | Bucketlist | ![screenshot](/media/readme/pep8/pep8-bucketlist-models.png) | No errors found |
-
+| admin.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-admin.png) | No errors found |
+| apps.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-apps.png) | No errors found |
+| forms.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-forms.png) | No errors found |
+| models.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-models.png) | No errors found |
+| urls.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-urls.png) | No errors found |
+| views.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-views.png) | No errors found |
+| admin.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-admin.png) | No errors found |
+| apps.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-apps.png) | No errors found |
+| models.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-models.png) | No errors found |
+| urls.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-urls.png) | No errors found |
+| views.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-views.png) | No errors found |
+| settings.py | wherenext | ![screenshot](/media/pep8/pep8-wherenext-settings.png) | No errors found |
+| urls.py | wherenext | ![screenshot](/media/pep8/pep8-wherenext-urls.png) | No errors found |
+| wsgi.py | wherenext | ![screenshot](/media/pep8/pep8-wherenext-wsgi.png) | No errors found |
 
 
 ### Manual Testing
