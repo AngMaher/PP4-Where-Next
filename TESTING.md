@@ -28,7 +28,7 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2F) | ![screenshot](documentation/testing/html-validation-home.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2F) | ![screenshot](docs/testing/w3-html/index-base.png) | Pass: No Errors |
 | Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing/html-validation-sign-up.png) | Pass: No Errors |
 | Log In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing/html-validation-sign-in.png) | Pass: No Errors |
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-forgot-password.png) | Pass: No Errors |
@@ -51,20 +51,20 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 
 | File | folder/app | Screenshot | Notes |
 | --- | --- | --- | --- |
-| admin.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-admin.png) | No errors found |
-| apps.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-apps.png) | No errors found |
-| forms.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-forms.png) | No errors found |
-| models.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-models.png) | No errors found |
-| urls.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-urls.png) | No errors found |
-| views.py | Bucketlist | ![screenshot](/media/pep8/pep8-bucketlist-views.png) | No errors found |
-| admin.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-admin.png) | No errors found |
-| apps.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-apps.png) | No errors found |
-| models.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-models.png) | No errors found |
-| urls.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-urls.png) | No errors found |
-| views.py | Travelblog | ![screenshot](/media/pep8/pep8-travelblog-views.png) | No errors found |
-| settings.py | wherenext | ![screenshot](/media/pep8/pep8-wherenext-settings.png) | No errors found |
-| urls.py | wherenext | ![screenshot](/media/pep8/pep8-wherenext-urls.png) | No errors found |
-| wsgi.py | wherenext | ![screenshot](/media/pep8/pep8-wherenext-wsgi.png) | No errors found |
+| admin.py | Bucketlist | ![screenshot](/docs/testing/pep8/pep8-bucketlist-admin.png) | No errors found |
+| apps.py | Bucketlist | ![screenshot](/docs/testing/pep8/pep8-bucketlist-apps.png) | No errors found |
+| forms.py | Bucketlist | ![screenshot](/docs/testing/pep8/pep8-bucketlist-forms.png) | No errors found |
+| models.py | Bucketlist | ![screenshot](/docs/testing/pep8/pep8-bucketlist-models.png) | No errors found |
+| urls.py | Bucketlist | ![screenshot](/docs/testing/pep8/pep8-bucketlist-urls.png) | No errors found |
+| views.py | Bucketlist | ![screenshot](/docs/testing/pep8/pep8-bucketlist-views.png) | No errors found |
+| admin.py | Travelblog | ![screenshot](/docs/testing/pep8/pep8-travelblog-admin.png) | No errors found |
+| apps.py | Travelblog | ![screenshot](/docs/testing/pep8/pep8-travelblog-apps.png) | No errors found |
+| models.py | Travelblog | ![screenshot](/docs/testing/pep8/pep8-travelblog-models.png) | No errors found |
+| urls.py | Travelblog | ![screenshot](/docs/testing/pep8/pep8-travelblog-urls.png) | No errors found |
+| views.py | Travelblog | ![screenshot](/docs/testing/pep8/pep8-travelblog-views.png) | No errors found |
+| settings.py | wherenext | ![screenshot](/docs/testing/pep8/pep8-wherenext-settings.png) | No errors found |
+| urls.py | wherenext | ![screenshot](/docs/testing/pep8/pep8-wherenext-urls.png) | No errors found |
+| wsgi.py | wherenext | ![screenshot](/docs/testing/pep8/pep8-wherenext-wsgi.png) | No errors found |
 
 
 ### Manual Testing

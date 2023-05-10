@@ -22,7 +22,7 @@ For each Item on their Bucket List, lets say "Want to travel to Rome". They can:
 
 You can find the live appliaction here: <a href ='https://pp4-where-next.herokuapp.com/'>Where Next?</a>
 
-![Am I responsive](/media/readme/amiresponsive.png)
+![Am I responsive](/docs/readme/amiresponsive.png)
 
 
 
@@ -108,7 +108,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <details>
 <summary>Click to View Home Page wireframes</summary>
 
-![blog page](/media/readme/wire-blogview.png)
+![blog page](/docs/readme/wire-blogview.png)
 </details>
 
 
@@ -117,7 +117,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <details>
 <summary>Click to View Blog Content wireframes</summary>
 
-![blog content](/media/readme/wire-blogcontent.png)
+![blog content](/docs/readme/wire-blogcontent.png)
 </details>
 
 ### Bucket List Wireframe
@@ -125,7 +125,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <details>
 <summary>Click to View Bucket List wireframes</summary>
 
-![bucketlist](/media/readme/wire-bucketlist.png)
+![bucketlist](/docs/readme/wire-bucketlist.png)
 </details>
 
 ### Home Page Wireframe
@@ -133,7 +133,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <details>
 <summary>Click to View Signin Page wireframes</summary>
 
-![sign-in page](/media/readme/wire-signin.png)
+![sign-in page](/docs/readme/wire-signin.png)
 </details><br>
 
 ## Colour Scheme
@@ -146,7 +146,7 @@ I decided to keep the website bright with a main colur of blue throughout the si
 
 
 
-![colours used](/media/readme/colours.png)
+![colours used](/docs/readme/colours.png)
 
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
 
@@ -249,8 +249,8 @@ Table: **List**
 <details>
     <summary>Click to View About Page</summary>
 
-  ![about page](/media/readme/about-page.png)
-  ![example of bucket list](/media/readme/example-bucket-list.png)
+  ![about page](/docs/readme/about-page.png)
+  ![example of bucket list](/docs/readme/example-bucket-list.png)
 </details>
 
 - ### **Home Page**
@@ -259,7 +259,7 @@ Table: **List**
 <details>
     <summary>CLick to View Home Page</summary>
 
-  ![Blog Page](/media/readme/home-page.png)
+  ![Blog Page](/docs/readme/home-page.png)
 </details>
 
  - ### **Blog Content Page**
@@ -267,7 +267,7 @@ Table: **List**
 <details>
     <summary>Click to View Blog Content Page</summary>
 
-  ![Content Page](/media/readme/blog-content.png)
+  ![Content Page](/docs/readme/blog-content.png)
 </details>
 
 - ### **Register New User**
@@ -275,7 +275,7 @@ Table: **List**
 <details>
     <summary>Click here to View Registration Page</summary>
 
-  ![register](/media/readme/register.png)
+  ![register](/docs/readme/register.png)
 </details>
 
 - ### **Sign In** 
@@ -284,7 +284,7 @@ Table: **List**
 <details>
     <summary>Click here to View Sign-in Page</summary>
 
-  ![sign in](/media/readme/sign-in.png)
+  ![sign in](/docs/readme/sign-in.png)
 </details>
 
 - ### **Log Out** 
@@ -292,7 +292,7 @@ Table: **List**
 <details>
     <summary>Click here to View Log Out Page</summary>
 
-  ![log out](/media/readme/log-out.png)
+  ![log out](/docs/readme/log-out.png)
 </details>
 
 - ### **Bucket List Page**
@@ -301,7 +301,7 @@ Table: **List**
 <details>
     <summary>Clic here to View the Bucket List</summary>
 
-  ![bucket list](/media/readme/bucket-list.png)
+  ![bucket list](/docs/readme/bucket-list.png)
 </details>
 
 - ### **Add a Bucket List Item**
@@ -310,7 +310,7 @@ Table: **List**
 <details>
     <summary>Click here to View Adding a Bucket List Item</summary>
 
-  ![Add bucket list](/media/readme/add-bucket-item.png)
+  ![Add bucket list](/docs/readme/add-bucket-item.png)
 </details>
 
 - ### **Edit a Bucket List Item**
@@ -318,7 +318,7 @@ Table: **List**
 <details>
 <summary>Click here to View Update Bucket List Item</summary>
 
-  ![edit bucket list](/media/readme/update-bucket-item.png)
+  ![edit bucket list](/docs/readme/update-bucket-item.png)
 </details>
 
 - ### **Add a plan to one bucket list item**
@@ -326,7 +326,7 @@ Table: **List**
 <details>
 <summary>Click here to View Add/Edit Plan</summary>
 
-  ![plan bucket list](/media/readme/edit-plan.png)
+  ![plan bucket list](/docs/readme/edit-plan.png)
 </details>
 
 - ### **View the plan to one bucket list item**
@@ -334,7 +334,7 @@ Table: **List**
 <details>
 <summary>Click here to View the Plan Page</summary>
 
-  ![plan bucket list](/media/readme/view-plan.png)
+  ![plan bucket list](/docs/readme/view-plan.png)
 </details>
 
 - ### **Delete a Bucket List Item**
@@ -342,7 +342,7 @@ Table: **List**
 <details>
 <summary>Click here to View Delete Item Page</summary>
 
-  ![delete bucket list](/media/readme/delete-item.png)
+  ![delete bucket list](/docs/readme/delete-item.png)
 </details>
 
 - ### **Footer**
@@ -350,7 +350,7 @@ Table: **List**
 <details>
 <summary>Click here to View the Footer</summary>
 
-  ![footer](/media/readme/footer.png)
+  ![footer](/docs/readme/footer.png)
 </details>
 
 - ### **Nav Bar When Logged Out**
@@ -358,7 +358,7 @@ Table: **List**
 <details>
 <summary>Click here to View the Log Out Page</summary>
 
-  ![logged out nav](/media/readme/nav-logged-out.png)
+  ![logged out nav](/docs/readme/nav-logged-out.png)
 </details>
 
 - ### **Nav Bar When Logged In**
@@ -367,7 +367,7 @@ Table: **List**
 <details>
   <summary>Click here to see the Log In Page</summary>
 
-  ![logged in nav](/media/readme/nav-logged-in.png)
+  ![logged in nav](/docs/readme/nav-logged-in.png)
 </details>
 
 [Back to top &uarr;](#table-of-contents)
@@ -432,10 +432,10 @@ To obtain your own Postgres Database, sign-up with your GitHub account, then fol
 ***
 ### Cloudinary API
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+This project uses the [Cloudinary API](https://cloudinary.com) to store docs assets online, due to the fact that Heroku doesn't persist this type of data.
 
 To obtain your own Cloudinary API key, create an account and log in.
-- For *Primary interest*, you can choose *Programmable Media for image and video API*.
+- For *Primary interest*, you can choose *Programmable docs for image and video API*.
 - Optional: *edit your assigned cloud name to something more memorable*.
 - On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
 - Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
@@ -568,7 +568,7 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
 
 ### Code
 
-### Media
+### docs
 
 - [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - to create my logo
 
