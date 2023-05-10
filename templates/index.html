@@ -26,17 +26,12 @@
                                     <a href="{% url 'category' post.category %}" class="category">Category: {{ post.get_category_display}}</a>
                                 </div>
                             </div>
-                            <strong>
-                            <a href="{% url 'post_content' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                            </a>
-                            <h4 class="card-text">{{ post.excerpt }}</h4>
-                            </strong>
+                            <h2><a href="{% url 'post_content' post.slug %}" class="post-link card-title">
+                                    <strong>{{ post.title }}</strong></a></h2>
+                            <p class="card-text"><strong>{{ post.excerpt }}</strong></p>
                             <hr />
-                            <strong>
-                            <h5 class="card-text h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                {{ post.number_of_likes }}</h5>
-                            </strong>
+                            <h5 class="card-text h6"><strong>{{ post.created_on}} <i class="far fa-heart"></i>
+                                {{ post.number_of_likes }}</strong></h5>
                         </div>
                     </div>
                 </div>
