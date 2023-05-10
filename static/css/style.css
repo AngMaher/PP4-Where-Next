@@ -229,6 +229,10 @@ h1, h2, h3 {
     background-color: var(--messages);
 }
 
+#edit_user:hover {
+    color: var(--main-blue);
+}
+
 #msg_login {
     margin-top: 10%;
 }

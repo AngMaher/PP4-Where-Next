@@ -1,5 +1,5 @@
 from . import views
-from .views import CategoryView, AboutView
+from .views import CategoryView, AboutView, userEdit
 from bucketlist.views import UserList
 from django.urls import path, include
 
@@ -10,4 +10,5 @@ urlpatterns = [
     path('<slug:slug>/', views.PostContent.as_view(), name='post_content'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path('category/<int:cats>', CategoryView, name='category'),
+    path('edit_user/<int:user_id>/', userEdit, name='user_edit'),
 ]

@@ -4,6 +4,7 @@ from .models import List
 from django.urls import reverse_lazy
 from django.contrib import messages
 from .forms import AddBucketlistForm
+from django.contrib.auth.models import User
 
 
 class UserList(generic.ListView):

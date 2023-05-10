@@ -2,8 +2,10 @@ from django.shortcuts import render, HttpResponse, get_object_or_404, reverse, r
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
+from django.contrib.auth.models import User
+from django.forms.models import model_to_dict
 from django.contrib import messages
-from .forms import CommentForm
+from .forms import CommentForm, UserEditForm
 
 
 class BlogPosts(generic.ListView):
@@ -82,6 +84,20 @@ class PostLike(View):
             messages.success(request, 'You have liked the post')
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
+
+
+def userEdit(request, user_id):
+    user = get_object_or_404(User, pk=user_id)
+    if request.method == "GET":
+        form = UserEditForm(initial=model_to_dict(user))
+        return render(request, 'user_edit.html', {'form': form})
+    elif request.method == "POST":
+        form = UserEditForm(request.POST, instance=user)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('home'))
+        else:
+            return HttpResponseRedirect(reverse('home'))
 
 
 def CategoryView(request, cats):

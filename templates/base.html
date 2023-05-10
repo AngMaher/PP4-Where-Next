@@ -75,7 +75,7 @@
                     </ul>
                     {% if user.is_authenticated %}
                     <span>
-                        <a class="navbar-brand" href="{% url 'home' %}"><span class="logo">Welcome: {{ user.first_name }}</span></a>
+                        <a class="navbar-brand" href="{% url 'user_edit' user.pk %}"><span class="logo" id="edit_user">Welcome: {{ user.first_name }}</span></a>
                         <a class="icon-admin" href="{% url 'admin:index' %}"><i class="fa-sharp fa-solid fa-toolbox"></i></a>
                     </span>
                     {% else %}
@@ -132,6 +132,18 @@
         let alert = new bootstrap.Alert(messages);
         alert.close();
         }, 3000);
+
+        document.getElementById("edit_user").onmouseenter = function() {mouseEnter()};
+        document.getElementById("edit_user").onmouseleave = function() {mouseLeave()};
+
+        function mouseEnter() {
+        document.getElementById("edit_user").innerHTML = '{{ user.first_name }}: click to edit your profile';
+        }
+
+        function mouseLeave() {
+        document.getElementById("edit_user").innerHTML = 'Welcome: {{ user.first_name }}';
+        alert.close();
+        }       
     </script>
 </body>
 

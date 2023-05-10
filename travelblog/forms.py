@@ -13,3 +13,9 @@ class CommentForm(forms.ModelForm):
 class CustomSignUpForm(SignupForm):
     first_name = forms.CharField(max_length=100)
     last_name = forms.CharField(max_length=100)
+
+
+class UserEditForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name']
