@@ -36,13 +36,9 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Edit User | n/a | ![screenshot](docs/testing/w3-html/edit-user.png) | Pass: No Errors |
 | Update List Item | n/a | ![screenshot](docs/testing/w3-html/update-list-item.png) | Pass: No Errors |
 | View Plan | n/a | ![screenshot](docs/testing/w3-html/view-plan.png) | Pass: No Errors |
-| Add Item | n/a | ![screenshot](documentation/testing/html-validation-user-profile.png) | Pass: No Errors |
-| Edit Item| n/a | ![screenshot](documentation/testing/html-validation-other-profile.png) | Pass: No Errors |
-| Add Plan | n/a | ![screenshot](documentation/testing/html-validation-edit-profile.png) | Pass: No Errors |
-| Edit Plan | n/a | ![screenshot](documentation/testing/html-validation-followers-list.png) | Pass: No Errors |
-| Individual Post | n/a | ![screenshot](documentation/testing/html-validation-individual-post.png) | Pass: No Errors |
-| Delete Bucket List item | n/a | ![screenshot](documentation/testing/html-validation-delete-post.png) | Pass: No Errors ||
-| Sign Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](docs/testing/w3-html/log-out.pngpng) | Pass: No Errors |
+| Add List Item | n/a | ![screenshot](docs/testing/w3-html/add-list-item.png) | Pass: No Errors |
+| Delete Bucket List item | n/a | ![screenshot](docs/testing/w3-html/delete-list-item.png) | Pass: No Errors ||
+| Sign Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](docs/testing/w3-html/log-out.png) | Pass: No Errors |
 
 ### PEP8
 

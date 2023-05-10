@@ -16,15 +16,15 @@
       <p>{% blocktrans %}If you have not created an account yet, then please
       <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
       </div>
-    </div><br/>
+    </div><br>
     <div class="row">
       <div class="col-12 col-md-6 shadow-lg offset-md-3 log-container">
         <form class="login" method="POST" action="{% url 'account_login' %}">
-          <br/>
+          <br>
           {% csrf_token %}
           {{ form.as_p }}
           {% if redirect_field_value %}
-          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
           {% endif %}
           <!-- <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a> -->
           <button class="btn btn-log right" type="submit">{% trans "Sign In" %}</button>
