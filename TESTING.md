@@ -35,8 +35,7 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Bucket List | n/a | ![screenshot](docs/testing/w3-html/bucketlist.pngg) | Pass: No Errors |
 | Edit User | n/a | ![screenshot](docs/testing/w3-html/edit-user.png) | Pass: No Errors |
 | Update List Item | n/a | ![screenshot](docs/testing/w3-html/update-list-item.png) | Pass: No Errors |
-| Messaging Thread | n/a | ![screenshot](documentation/testing/html-validation-message-thread.png) | Pass: No Errors |
-| Bucket List | n/a | ![screenshot](documentation/testing/html-validation-create-thread.png) | Pass: No Errors |
+| View Plan | n/a | ![screenshot](docs/testing/w3-html/view-plan.png) | Pass: No Errors |
 | Add Item | n/a | ![screenshot](documentation/testing/html-validation-user-profile.png) | Pass: No Errors |
 | Edit Item| n/a | ![screenshot](documentation/testing/html-validation-other-profile.png) | Pass: No Errors |
 | Add Plan | n/a | ![screenshot](documentation/testing/html-validation-edit-profile.png) | Pass: No Errors |

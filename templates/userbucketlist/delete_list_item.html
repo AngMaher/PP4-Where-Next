@@ -14,8 +14,8 @@
         <div class="form-group">
             <form action = "{% url 'delete_list_item' list_item.id  %}" method="POST" class="col-9 offset-md-2">
                 {% csrf_token %}
-                <strong><p>Are you sure?</p></strong><br>
-                <input class="btn btn-danger" type="submit" value="YES"/>
+                <p><strong>Are you sure?</strong></p><br>
+                <input class="btn btn-danger" type="submit" value="YES">
                 <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
             </form>
         </div>
