@@ -18,9 +18,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://images.pexels.com/photos/3355734/pexels-photo-3355734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                            max-width="100%" alt="placeholder image if no image provided">
+                            style="width:100%;" alt="placeholder image if no image provided">
                 {% else %}
-                <img src="{{ post.featured_image.url }}" max-width="100%" alt="image choosen by admin">
+                <img src="{{ post.featured_image.url }}" style="width:100%;" alt="image choosen by admin">
                 {% endif %}
             </div>
             <div class="col-md-3 masthead-text masthead-image">
