@@ -134,16 +134,16 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <summary>Click to View Signin Page wireframes</summary>
 
 ![sign-in page](/media/readme/wire-signin.png)
-</details>
+</details><br>
 
 ## Colour Scheme
 
 I decided to keep the website bright with a main colur of blue throughout the site. 
 
   - #343434 - Jet, this colour is used a on the majority of the text throughout the site, and the footer.
-  - #5799E1 - Blue, this is used on many features, buttons and highlighting links etc.
-  - #FDF8F4 - Off white, this is used as the main background colour of the site.
-  - #E64141 - Orange, this colour is used for the many massages.
+  - #5799E1 - Blue, this is used on many features, buttons and highlighting links, popup messages.
+  - #FFF - white, this is used as the main background colour of the site to keep things clean.
+
 
 
 ![colours used](/media/readme/colours.png)

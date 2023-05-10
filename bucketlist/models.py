@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-from ckeditor.fields import RichTextField
 
 
 class List(models.Model):
@@ -9,7 +8,7 @@ class List(models.Model):
         User, on_delete=models.CASCADE, related_name="user_name"
     )
     title = models.CharField(max_length=300)
-    planning = RichTextField(blank=True, null=True)
+    planning = models.TextField(blank=True, null=True)
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
     done = models.BooleanField(null=False, blank=False, default=False)
