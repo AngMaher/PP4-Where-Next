@@ -12,7 +12,7 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    width="100%">
+                    style="width:100%;" alt="image of notepad and camera on desk">
             </div>
             <div class="col-md-3 masthead-text masthead-image">
             </div>
@@ -31,7 +31,7 @@
                     {% if list.user_name.id == user.id %}
                         <div>
                             <div class="col-12 col-md-8 p-3 mt-4 shadow-lg log-container rounded">
-                            <br />
+                            <br>
                                 <div>Posted By: <strong>{{list.user_name.username}}</strong> on
                                 <strong>{{list.created_on}}</strong>
                                 <hr>
@@ -52,22 +52,22 @@
                                         <a class="btn btn-danger"
                                                 href="{% url 'delete_list_item' list.pk %}"><i class="fas fa-trash"><small> Delete</small></i></a>
                                     </div>
-                                    <br />
+                                    <br>
                                 </div>
                             </div>
                         </div>
-                        <br />
+                        <br>
                     {% endif %}
                 {% empty %}
                     <h2>No Items to display</h2>
                     <p>Create a new Item</p>
                 {% endfor %}
                 <div class="offset-md-3">
-                    <br /><br />
+                    <br><br>
                     <a class="btn btn-info" href="{% url 'add_list_item' %}">Add Item</a>
                     <a href="{% url 'home' %}" class="btn btn-info"> Back</a>
                 </div>
-                <br />
+                <br>
             </div>
         </div>
     </div>

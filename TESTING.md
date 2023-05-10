@@ -29,7 +29,7 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2F) | ![screenshot](docs/testing/w3-html/index-base.png) | Pass: No Errors |
-| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing/html-validation-sign-up.png) | Pass: No Errors |
+| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Fabout%2F) | ![screenshot](docs/testing/w3-html/about.png.png) | Pass: No Errors |
 | Log In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing/html-validation-sign-in.png) | Pass: No Errors |
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-forgot-password.png) | Pass: No Errors |
 | Blog | n/a | ![screenshot](documentation/testing/html-validation-feed.png) | Pass: No Errors |
@@ -43,7 +43,7 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Edit Plan | n/a | ![screenshot](documentation/testing/html-validation-followers-list.png) | Pass: No Errors |
 | Individual Post | n/a | ![screenshot](documentation/testing/html-validation-individual-post.png) | Pass: No Errors |
 | Delete Bucket List item | n/a | ![screenshot](documentation/testing/html-validation-delete-post.png) | Pass: No Errors ||
-| Sign Out | n/a | ![screenshot](documentation/testing/html-validation-sign-out.png) | Pass: No Errors |
+| Sign Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](docs/testing/w3-html/log-out.pngpng) | Pass: No Errors |
 
 ### PEP8
 
