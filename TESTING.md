@@ -32,7 +32,7 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Fabout%2F) | ![screenshot](docs/testing/w3-html/about.png.png) | Pass: No Errors |
 | Log In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing/html-validation-sign-in.png) | Pass: No Errors |
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-forgot-password.png) | Pass: No Errors |
-| Blog | n/a | ![screenshot](documentation/testing/html-validation-feed.png) | Pass: No Errors |
+| Bucket List | n/a | ![screenshot](docs/testing/w3-html/bucketlist.pngg) | Pass: No Errors |
 | All Posts Feed | n/a | ![screenshot](documentation/testing/html-validation-all-posts-feed.png) | Pass: No Errors |
 | Blog Content | n/a | ![screenshot](documentation/testing/html-validation-inbox.png) | Pass: No Errors |
 | Messaging Thread | n/a | ![screenshot](documentation/testing/html-validation-message-thread.png) | Pass: No Errors |
