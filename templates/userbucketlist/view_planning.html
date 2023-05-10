@@ -32,10 +32,10 @@
                     <p>{{ list.planning | safe }}</p>
                 {% endif %}
                 <div class="offset-md-3">
-                <br /><br />
+                <br><br>
                     <a href="{% url 'update_planning' list.pk %}" class="btn btn-info">Edit Plan</a>
                     <a href="{% url 'bucketlist' %}" class="btn btn-info"> Back</a>
-                    <br/><br/>
+                    <br><br>
                 </div>
             {% else %}
                 <h2>Please login:
