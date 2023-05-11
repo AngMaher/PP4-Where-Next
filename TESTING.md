@@ -41,6 +41,8 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Delete Bucket List item | n/a | ![screenshot](docs/testing/w3-html/delete-list-item.png) | Pass: No Errors ||
 | Sign Out | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Faccounts%2Flogout%2F) | ![screenshot](docs/testing/w3-html/log-out.png) | Pass: No Errors |
 
+[Back to top &uarr;](#contents)
+
 ### PEP8
 
 - [PEP8CI](https://pep8ci.herokuapp.com/) - This was used test the code. No errors where found in the code. 
@@ -62,6 +64,7 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | urls.py | wherenext | ![screenshot](/docs/testing/pep8/pep8-wherenext-urls.png) | No errors found |
 | wsgi.py | wherenext | ![screenshot](/docs/testing/pep8/pep8-wherenext-wsgi.png) | No errors found |
 
+[Back to top &uarr;](#contents)
 
 ### CSS
 
@@ -69,10 +72,13 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | --- | --- | --- |
 |  | ![screenshot](/docs/testing/css/css-test.png) | No errors found |
 
+[Back to top &uarr;](#contents)
+
 ### Lighthouse
 
+[Back to top &uarr;](#contents)
 
-### Manual Testing
+## Manual Testing
 
 ### Navigation Bar
 Feature | Action | Expected Result | PASS/FAIL
@@ -140,8 +146,24 @@ Back button | Click | navigates to bucket list page | PASS
 ### Update Plan
 Feature | Action | Expected Result | PASS/FAIL
 ---|---|---|---
+Title | Display | shows the title of the bucket list item user wants to plan | PASS
+Plan Box | text araea for user to write details of their plan | PASS
+Update & Back & View Buttons | Hover | turns white from blue | Pass
+Update button | Click | update item and returns to bucket list | PASS
+Back button | Click | navigates to bucket list page | PASS
+Back to View | Click | navigates to View Plan page | PASS
 
+### View Plan
+#### Static Page showing the user their plan with header and footer covered already.
 
+### Delete Bucket List Item
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Confirm | Display | Questiom to make sure user is sure they want to delete | PASS
+Back | Hover | turns white from blue | Pass
+Yes button | Hover | button gets bigger when hover | PASS
+Back button | Click | navigates to bucket list page | PASS
+Yes button | Click | Item is deleted from database and returns to bucketlist | PASS
 
 
 ### Footer
@@ -206,14 +228,14 @@ Log Out Link | Click | Once the user is logged out, navigates to Home page | PAS
 Alert | Submit | Success message is displayed confirming that the user has logged out | PASS
 Alert | Submit | Success message fades automatically after 3 seconds | PASS
 
-
 ### 500 Error Page
 Feature | Action | Expected Result | PASS/FAIL
 ---|---|---|---
 Custom 404 Error Page | Enter URL that does not exist | Custom 404 error message is displayed | PASS
 Home Link | Click | Navigates to Home page with clickable button | PASS
 
-Please find manual testing file here: [TESTING.md](/TESTING.md)
+[Back to top &uarr;](#contents)
+
 
 ### User Stories 
 
@@ -224,7 +246,7 @@ As a Site User I can create and account so that Extend the features of the websi
 As a Site User/ Admin I can view likes on posts so that I can see which posts are popular. `(MUST HAVE)` | PASS
 As a Site User I can comment on a post so that I can feel part of the conversation. `(MUST HAVE)` | PASS
 As a Site User I can create my own bucket list so that I can keep track of goals. `(MUST HAVE)` | PASS
-As a Site User I can edit and delete items from my bucket list so that I can interact with the list. `(SHOULD HAVE)` `(MUST HAVE)` | pASS
+As a Site User I can edit and delete items from my bucket list so that I can interact with the list. `(SHOULD HAVE)` `(MUST HAVE)` | PASS
 As a Site User /Admin I can view comments on an individual post so that I can read the conversation. `(MUST HAVE)` | PASS
 As a Site User I can like/unlike posts so that I can interact with the content. `(SHOULD HAVE)` | PASS
 As a Site User I can mark of what I have achieved on my bucket list so that I can see my progress. `(COULD HAVE)` | PASS
@@ -239,7 +261,9 @@ As a Site Admin I can access the admin from a link on the web page so that I hav
 As a Site Admin I can filter the comments by approved and not approve so that I can have a list of all unapproved comments together `(MUST HAVE)` | PASS
 As a Site Admin I can search through posts, comments and Bucket List Items so that I can find what I am looking for with ease `(MUST HAVE)` | PASS
 
-
+[Back to top &uarr;](#contents)
 
 
 ### Bugs/known issues
+
+[Back to top &uarr;](#contents)

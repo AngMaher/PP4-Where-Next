@@ -26,73 +26,74 @@ You can find the live appliaction here: <a href ='https://pp4-where-next.herokua
 
 
 
-## Table of Contents
+# Contents
 
-- [User Experience](#user-experience)
+  - [User Experience](#user-experience)
 
-  -[Wireframes](#wireframes)
+    - [Wireframes](#wireframes)
 
-  - [Colour Scheme](#colour-scheme)
+    - [Colour Scheme](#colour-scheme)
 
-  - [User Goals](#user-goals)
+    - [User Goals](#user-goals)
 
-  - [Developer Goals](#developer-goals)
+    - [Developer Goals](#developer-goals)
 
-- [Logic and Features](#logic-and-features)
+  - [Logic and Features](#logic-and-features)
 
-  - [Logic](#logic)
+    - [Logic](#logic)
 
-  - [Database Structure](#database-structure)
+      - [Database Structure](#database-structure)
+      - [Data Models](#data-model)
 
-  - [Features](#features)
+    - [Features](#features)
 
-    - [main menu](#main-menu)
+      - [main menu](#main-menu)
 
-    - [Player Menu](#player-menu)
+      - [Player Menu](#player-menu)
 
-    - [Enter Player Details](#enter-player-details)
+      - [Enter Player Details](#enter-player-details)
 
-    - [Delete a Player](#delete-a-player)
+      - [Delete a Player](#delete-a-player)
 
-    - [List of Outstanding Fees](#list-of-outstanding-fees)
+      - [List of Outstanding Fees](#list-of-outstanding-fees)
 
-    - [Pay Fees](#pay-fees)
+      - [Pay Fees](#pay-fees)
 
-    - [Check Kit Sizes](#check-kit-sizes)
+      - [Check Kit Sizes](#check-kit-sizes)
 
-    - [Raffle Menu](#raffle-menu)
+      - [Raffle Menu](#raffle-menu)
 
-    - [Finishing Screen](#finishing-screen)
+      - [Finishing Screen](#finishing-screen)
 
-- [Technology](#technology)
+  - [Technology](#technology)
 
-  - [Lanuages Used](#languages-used)
+    - [Lanuages Used](#languages-used)
 
-  - [Software Used](#software-used)
+    - [Software Used](#software-used)
 
-  - [Python Libraries/Modules](#python-librariesmodules)
+    - [Python Libraries/Modules](#python-librariesmodules)
 
-- [Testing](#testing)
+  - [Testing](#testing)
 
-  - [Validation](#validation)
+    - [Validation](#validation)
 
-    - [PEP8CI](#pep8)
+      - [PEP8CI](#pep8)
 
-  - [Manual Testing](#manual-testing)
+    - [Manual Testing](#manual-testing)
 
-  - [Bugs/Known Issues](#bugsknown-issues)
+    - [Bugs/Known Issues](#bugsknown-issues)
 
-- [Deployment](#deployment)
+  - [Deployment](#deployment)
 
-  - [Git and Github](#git-and-github)
+    - [Git and Github](#git-and-github)
 
-  - [Deployment to Heroku](#deployment-to-heroku)
+    - [Deployment to Heroku](#deployment-to-heroku)
 
-- [Future Development](#future-development)
+  - [Future Development](#future-development)
 
-- [Credits](#credits)
+  - [Credits](#credits)
 
-- [Acknowledgements](#acknowledgements)
+  - [Acknowledgements](#acknowledgements)
 
 
 # User Experience
@@ -156,7 +157,7 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 :root {
     --main-blue: #5799e1;
     --dark-gray: #343434;
-    --background-colour: #fdf8f4;
+    --background-colour: #fff;
     --messages: rgb(230, 65, 65, 0.6);
 }
 ```
@@ -208,8 +209,7 @@ Bucket List dream becomes a reality.
 
 ## Logic
 
-
-## Database structure
+### Database structure
 
 ### Data Model
 
@@ -402,6 +402,9 @@ Table: **List**
 - [tabulate](https://www.statology.org/create-table-in-python/) - Used to create the table to print the data from the player worksheet
 - [colorama](https://pypi.org/project/colorama/) - Used to colour the text in terminal output.
 
+
+[Back to top &uarr;](#contents)
+
 ## Testing
 
 Please find Testing here: [Testing](TESTING.md)
@@ -512,8 +515,6 @@ import os
 os.environ.setdefault("CLOUDINARY_URL", "insert your own Cloudinary API key here")
 os.environ.setdefault("DATABASE_URL", "insert your own ElephantSQL database URL here")
 os.environ.setdefault("SECRET_KEY", "this can be any random secret key")
-
-# local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
 ```
 
@@ -563,6 +564,7 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
 
 ## Future Development
 
+[Back to top &uarr;](#contents)
 
 ## Credits
 
@@ -572,6 +574,9 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
 
 - [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - to create my logo
 
+
+[Back to top &uarr;](#contents)
+
 ### Resources
 
  - Websites used along with course material were [StackOverFlow](https://stackoverflow.com/questions/18754276/python-for-beginners), and [W3Schools](https://www.w3schools.com/python/)
@@ -579,3 +584,5 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
  ## Acknowledgements
   
 - I would like to thank my mentor Jubril for his guidance through the project and my many testers (family and friends).
+
+[Back to top &uarr;](#contents)

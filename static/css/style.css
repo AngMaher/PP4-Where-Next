@@ -225,6 +225,10 @@ h1, h2, h3 {
     border: none;
 }
 
+.btn-danger:hover {
+    font-size: 20px;
+}
+
 .alert-success {
     background-color: var(--messages);
 }
