@@ -56,8 +56,9 @@
                 </div>
                 <div class="row">
                     {% endif %}
+                    {% empty %}
+                        <h2> There are noposts for this category</h2>
                     {% endfor %}
-
                 </div>
             </div>
         </div>

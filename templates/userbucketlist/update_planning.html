@@ -10,7 +10,7 @@
     <div class="form-group p-3 offset-md-1 col-12 col-md-10 shadow-lg log-container"><br>
         <h1>Plan your Trip Here for:</h1>
         <h5>{{ list.title }}</h5><br>
-        <form method="POST" class="col-12 col-md-12">
+        <form method="POST" class="col-12 col-md-12" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form.media }}
             {{ form | crispy }}

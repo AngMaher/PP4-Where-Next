@@ -29,12 +29,13 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2F) | ![screenshot](docs/testing/w3-html/index-base.png) | Pass: No Errors |
-| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Fabout%2F) | ![screenshot](docs/testing/w3-html/about.png.png) | Pass: No Errors |
-| Log In | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing/html-validation-sign-in.png) | Pass: No Errors |
-| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftribe.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![screenshot](documentation/testing/html-validation-forgot-password.png) | Pass: No Errors |
-| Bucket List | n/a | ![screenshot](docs/testing/w3-html/bucketlist.pngg) | Pass: No Errors |
+| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpp4-where-next.herokuapp.com%2Fabout%2F) | ![screenshot](docs/testing/w3-html/about.png) | Pass: No Errors |
+| Register | n/a | ![screenshot](docs/testing/w3-html/register.png) | Pass: No Errors |
+| Log In | n/a | ![screenshot](docs/testing/w3-html/log-in.png) | Pass: No Errors |
+| Bucket List | n/a | ![screenshot](docs/testing/w3-html/bucketlist.png) | Pass: No Errors |
 | Edit User | n/a | ![screenshot](docs/testing/w3-html/edit-user.png) | Pass: No Errors |
 | Update List Item | n/a | ![screenshot](docs/testing/w3-html/update-list-item.png) | Pass: No Errors |
+| Update Plan | n/a | ![screenshot](docs/testing/w3-html/update-plan.png) | Pass: No Errors |
 | View Plan | n/a | ![screenshot](docs/testing/w3-html/view-plan.png) | Pass: No Errors |
 | Add List Item | n/a | ![screenshot](docs/testing/w3-html/add-list-item.png) | Pass: No Errors |
 | Delete Bucket List item | n/a | ![screenshot](docs/testing/w3-html/delete-list-item.png) | Pass: No Errors ||
@@ -62,8 +63,183 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 | wsgi.py | wherenext | ![screenshot](/docs/testing/pep8/pep8-wherenext-wsgi.png) | No errors found |
 
 
+### CSS
+
+| CSS | Screenshot | Notes |
+| --- | --- | --- |
+|  | ![screenshot](/docs/testing/css/css-test.png) | No errors found |
+
+### Lighthouse
+
+
 ### Manual Testing
 
+### Navigation Bar
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Menu | Display | Links displayed side by side in the navigation bar | PASS
+Home Link | Click | Navigates to Home page | PASS
+About Link | Click | Navigates to About page | PASS
+Log In Link | Click | Navigates to log In page | PASS
+Register | Click | Navigates to Sign up page | PASS
+Welcome (unauthenticated) | Click | returns home| PASS
+Welcome (authenticated) | Click/hover/display | Shows users name, when mouse hovers over changes to say click to edit profile | PASS
+Sign Up Link | Display | Only available if the user is not logged in | PASS
+Sign Up Link | Click | Navigates to Sign Up page | PASS
+Log In Link | Display | Only available if the user is not logged in | PASS
+Log In Link | Click | Navigates to Log In page | PASS
+Log Out Link | Display | Only available if the user is logged in | PASS
+Log Out Link | Click | Navigates to Log Out page and asks user if they're sure they want to log out | PASS
+Bucket List | Display | Only available if the user is logged in  | PASS
+Bucket List | Click | Navigates to Bucket List page  | PASS
+All Links | Hover | Color changes to darker when hover | PASS
+All Links | Click | Changes to underline to show which page user is on | PASS
+
+### Blog Posts
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Categories | Click | navigates to category page | PASS
+Title | Click | navigates to blog post page | PASS
+Blog Cards | Display | Display card with date time likes and comments | PASS
+Pagination | Display | shows pagination button after 6 posts | PASS
+Pagination | Click | navagtes to next page of posts | PASS
+
+
+### Bucket List
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+List Items | Display | shows a list of all items for the logged in user only | PASS
+Add & Back Buttons | Hover | turns white from blue | Pass
+Add button | Click | navigates to add item form | PASS
+Back button | Click | navigates to home page | PASS
+Button Group | Hover | goes from gray to darker gray | PASS
+Edit Button | Click | navigates to edit form | PASS
+View Plan | Click | navigates to view plan page | PASS
+Update Plan Button | naviagtes to update plan form | PASS
+Delete Button | Click | navigates to page to confirm | PASS
+Done Item | When item is marked done, a tick appears and is striked through | PASS
+
+
+### Add Item
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Add & Back Buttons | Hover | turns white from blue | Pass
+Add button | Click | adds item and returns to bucket list | PASS
+Back button | Click | navigates to bucket list page | PASS
+Title input | Display | Placeholder in input box | PASS
+
+### Edit Item
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Input box | Display | Shows the item in the input box to be amended | PASS
+Done box | Display | shows so user can change item to done | PASS
+Update & Back Buttons | Hover | turns white from blue | Pass
+Update button | Click | update item and returns to bucket list | PASS
+Back button | Click | navigates to bucket list page | PASS
+
+### Update Plan
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+
+
+
+
+### Footer
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Position | Display | Footer remains at the bottom of each page, even if the content of the page doesn't occupy the full view height | PASS
+Facebook Link | Click | Opens Facebook | PASS
+Twitter Link | Click | Opens Twitter in a new tab | PASS
+Instagram Link | Click | Opens Instagram in a new tab | PASS
+Youtube | Click | Opens Youtube in a new tab | PASS
+All Links | Hover | Color changes from white to blue and get bigger | PASS
+Home button | Click | when clicked returns to home page | PASS
+
+### Sign Up Page
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Username Field | Leave Empty | Form does not submit | PASS
+Username Field | Leave Empty | Error message is displayed | PASS
+Username Field | Enter an Empty String | Form does not submit | PASS
+Username Field | Enter an Empty String | Error message is displayed saying field is required | PASS
+Username Field | Duplicate Username | Form does not submit | PASS
+Username Field | Duplicate Username | Error message is displayed | PASS
+Email Field | Leave Empty | Form submits without an email address as this is an optional field | PASS
+Email Field | Enter Invalid Format | Form does not submit, error message shown | PASS
+Email Field | Duplicate Email Address | Form does not submit | PASS
+Email Field | Duplicate Email Address | Error message is displayed | PASS
+Password Field | Leave Empty | Form does not submit | PASS
+Password Field | Enter an Empty String | Form does not submit | PASS
+Password Field | Enter an Empty String | Error message is displayed | PASS
+Password Field | Passwords Not Matched | Form does not submit | PASS
+Password Field | Passwords Not Matched | Error message is displayed | PASS
+Log In Link | Click | Link on Sign Up page for users who already have an account. Navigates to Log In page | PASS
+Sign Up Link | Click | An account is created after having correctly filled in the required fields | PASS
+Sign Up Link | Click | Once an account is created, logs in the user | PASS
+Sign Up Link | Click | Once the user is logged in, navigates to Home page | PASS
+Alert | Submit | Success message is displayed confirming the user has logged in as [username] | PASS
+Alert | Submit | Success message is removed after 3 seconds | PASS
+
+### Log In Page
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Username Field | Leave Empty | Form does not submit | PASS
+Username Field | Leave Empty | Error message is displayed | PASS
+Username Field | Enter an Empty String | Form does not submit | PASS
+Username Field | Enter an Empty String | Error message is displayed | PASS
+Password Field | Leave Empty | Form does not submit | PASS
+Password Field | Leave Empty | Error message is displayed | PASS
+Password Field | Enter an Empty String | Form does not submit | PASS
+Password Field | Enter an Empty String | Error message is displayed | PASS
+Login Fields | Incorrect Details | Form does not submit | PASS
+Login Fields | Incorrect Details | Error message is displayed | PASS
+Sign Up Link | Click | Navigates to Sign Up page | PASS
+Log In Link | Click | Once the required fields are correctly filled in, the user is logged in and taken to the homepage | PASS
+Alert | Submit | Success message is displayed confirming the user has logged in as [username] | PASS
+Alert | Submit | Success message fades automatically after 3 seconds | PASS
+
+### Log Out Page
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Log Out Link | Click | Redirects the user to the logout page, asking if they're sure they want to log out | PASS
+Log Out Link | Click | Once the user is logged out, navigates to Home page | PASS
+Alert | Submit | Success message is displayed confirming that the user has logged out | PASS
+Alert | Submit | Success message fades automatically after 3 seconds | PASS
+
+
+### 500 Error Page
+Feature | Action | Expected Result | PASS/FAIL
+---|---|---|---
+Custom 404 Error Page | Enter URL that does not exist | Custom 404 error message is displayed | PASS
+Home Link | Click | Navigates to Home page with clickable button | PASS
+
 Please find manual testing file here: [TESTING.md](/TESTING.md)
+
+### User Stories 
+
+User Story | PASS/FAIL
+---|---
+As a Site User I can view a list of posts so that I can choose which post I want to view. `(MUST HAVE)` | PASS
+As a Site User I can create and account so that Extend the features of the website to comment/like and create my own bucket list. `(MUST HAVE)` | PASS
+As a Site User/ Admin I can view likes on posts so that I can see which posts are popular. `(MUST HAVE)` | PASS
+As a Site User I can comment on a post so that I can feel part of the conversation. `(MUST HAVE)` | PASS
+As a Site User I can create my own bucket list so that I can keep track of goals. `(MUST HAVE)` | PASS
+As a Site User I can edit and delete items from my bucket list so that I can interact with the list. `(SHOULD HAVE)` `(MUST HAVE)` | pASS
+As a Site User /Admin I can view comments on an individual post so that I can read the conversation. `(MUST HAVE)` | PASS
+As a Site User I can like/unlike posts so that I can interact with the content. `(SHOULD HAVE)` | PASS
+As a Site User I can mark of what I have achieved on my bucket list so that I can see my progress. `(COULD HAVE)` | PASS
+As a Site User I can view an more detailed version of the post so that I can read the article in full. `(MUST HAVE)` | PASS
+As a Site User I can create a mood-board/plan for each item on my bucket list so that I have a place to store all the details I need to make my goal a reality. `(SHOULD HAVE)` | PASS
+As a Site User I can View mood-board/plan so that I can view my plan so far without having to go into edit mode. `(SHOULD HAVE)` | PASS
+As a Site User I can call up all blogs for a certain category so that I can filter the blogs to my needs `(SHOULD HAVE)` | PASS
+As a Site Admin I can create, read and delete posts so that I can manage my blog content. `(MUST HAVE)` | PASS
+As a Site Admin I can approve and disapprove comments so that I can filter out objectionable comments. `(SHOULD HAVE)` | PASS
+As a Site Admin I can create draft posts so that I can finish writing the content later. `(SHOULD HAVE)` | PASS
+As a Site Admin I can access the admin from a link on the web page so that I have easier access. `(SHOULD HAVE)` | PASS
+As a Site Admin I can filter the comments by approved and not approve so that I can have a list of all unapproved comments together `(MUST HAVE)` | PASS
+As a Site Admin I can search through posts, comments and Bucket List Items so that I can find what I am looking for with ease `(MUST HAVE)` | PASS
+
+
+
 
 ### Bugs/known issues

@@ -3,7 +3,7 @@ from django.views import generic, View
 from .models import List
 from django.urls import reverse_lazy
 from django.contrib import messages
-from .forms import AddBucketlistForm
+from .forms import AddBucketlistForm, UpdatePlanningForm
 from django.contrib.auth.models import User
 
 
@@ -83,3 +83,10 @@ def DeleteListItem(request, item_id):
         return redirect('bucketlist')
 
     return render(request, 'userbucketlist/delete_list_item.html', context)
+
+
+def index(request):
+    plan = List.objects.all()
+    planform = UpdatePlanningForm
+    context = {'plan': plan, 'planform': planform}
+    return render(request, 'userbucketlist/update_planning.html', context)

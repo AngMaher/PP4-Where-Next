@@ -1,7 +1,6 @@
 from .models import List
 from django import forms
 from django_summernote.widgets import SummernoteWidget
-# from ckeditor.widgets import CKEditorWidget
 
 
 class AddBucketlistForm(forms.ModelForm):
@@ -25,7 +24,8 @@ class AddBucketlistForm(forms.ModelForm):
 
 
 class UpdatePlanningForm(forms.ModelForm):
+    planning = forms.CharField(widget=SummernoteWidget())
+
     class Meta:
         model = List
         fields = ['planning', ]
-        widgets = {'planning': SummernoteWidget()}
