@@ -176,7 +176,7 @@ h1, h2, h3 {
 }
 
 .log-container {
-    background-color: rgb(87, 153, 225, 0.1);
+    background-color: var(--background-colour);
 }
 .btn-log {
     background-color: var(--main-blue);
