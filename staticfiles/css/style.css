@@ -176,7 +176,8 @@ h1, h2, h3 {
 }
 
 .log-container {
-    background-color: rgb(87, 153, 225, 0.1);
+    background-color: var(--background-colour);
+    color: var(--dark-gray);
 }
 .btn-log {
     background-color: var(--main-blue);
@@ -212,6 +213,11 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.page-link{
+    background-color: var(--main-blue);
+    color: var(--background-colour);
+}
+
 .btn-like {
     color: var(--dark-gray);
     border: none;
@@ -223,6 +229,10 @@ h1, h2, h3 {
     color: var(--main-blue);
     background: transparent;
     border: none;
+}
+
+.btn-danger:hover {
+    font-size: 20px;
 }
 
 .alert-success {

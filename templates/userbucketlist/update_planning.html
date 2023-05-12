@@ -11,11 +11,10 @@
         <h1>Plan your Trip Here for:</h1>
         <h5>{{ list.title }}</h5><br>
         <form method="POST" class="col-12 col-md-12" enctype="multipart/form-data">
+            <div id="summernote" style="width:100%;"></div>
             {% csrf_token %}
             {{ form.media }}
             {{ form | crispy }}
-
-            <div id="summernote" style="width:100%;"></div>
             <br>
             <button class="btn btn-info">Update</button>
             <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>

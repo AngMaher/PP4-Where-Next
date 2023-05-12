@@ -56,6 +56,7 @@ class PostContent(View):
             comment.save()
             messages.success(request, 'Successfully added a comment.')
         else:
+            messages.error(request, 'Error please try again')
             comment_form = CommentForm()
 
         return render(
