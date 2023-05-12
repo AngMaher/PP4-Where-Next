@@ -212,6 +212,11 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.page-link{
+    background-color: var(--main-blue);
+    color: var(--background-colour);
+}
+
 .btn-like {
     color: var(--dark-gray);
     border: none;
