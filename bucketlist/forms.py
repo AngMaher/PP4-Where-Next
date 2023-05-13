@@ -28,5 +28,5 @@ class UpdatePlanningForm(forms.ModelForm):
         model = List
         fields = ['planning', ]
         widgets = {
-            'planning': SummernoteWidget(),
+            'planning': forms.CharField(widget=SummernoteWidget())
         }

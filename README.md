@@ -217,9 +217,25 @@ Bucket List dream becomes a reality.
 Table: **Post**
 
 | **PK** | **id** (unique) | Type | Notes |
+| --- | --- | --- | --- |
+| | title_tag | CharField | max_length=200, unique=True |
+| | title_tag | CharField | max_length=200, default="Where Next? |
+| | slug | SlugField | max_length=200, unique=True | 
+| FK | author | Foreign Key | User, on_delete=models.CASCADE |
+| | featured_image | CloudinaryField | 'image', default='placeholder' |
 
 
 
+***
+    featured_image = CloudinaryField('image', default='placeholder')
+    excerpt = models.TextField(blank=True)
+    updated_on = models.DateTimeField(auto_now=True)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+    category = models.IntegerField(choices=CATEGORY, default=0)
+    likes = models.ManyToManyField(
+        User, related_name='blog_likes', blank=True)
 
 Table: **Comment**
 
@@ -234,6 +250,12 @@ Table: **List**
 
 | **PK** | **id** (unique) | Type | Notes |
 | --- | --- | --- | --- |
+| FK | user_name | Foreign Key | User, on_delete=models.CASCADE |
+| | Title | CharField | max-lenght=300 |
+| | planning | Text Field | blank=True, null=True |
+| | updated_on | Date Time Field | Auto_now=True
+| | created_om | Date Time Field | auto_now_add=True
+| | done | Boolean Field |  null=False, blank=False, default=False |
 
 ***
 

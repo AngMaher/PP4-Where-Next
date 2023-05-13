@@ -231,7 +231,7 @@ Alert | Submit | Success message fades automatically after 3 seconds | PASS
 ### 500 Error Page
 Feature | Action | Expected Result | PASS/FAIL
 ---|---|---|---
-Custom 404 Error Page | Enter URL that does not exist | Custom 404 error message is displayed | PASS
+Custom 500 Error Page | Enter URL that does not exist | Custom 500 error message is displayed | PASS
 Home Link | Click | Navigates to Home page with clickable button | PASS
 
 [Back to top &uarr;](#contents)
