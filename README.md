@@ -223,28 +223,26 @@ Table: **Post**
 | | slug | SlugField | max_length=200, unique=True | 
 | FK | author | Foreign Key | User, on_delete=models.CASCADE |
 | | featured_image | CloudinaryField | 'image', default='placeholder' |
+| | excerpt | TestField | Blank True |
+| | updated_on |DateTimeField | auto_now_add true |
+| | content | TextField | |
+| FK | likes | Many to Many | User, related_name="blog_likes", blank=True |
 
 
 
 ***
-    featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(blank=True)
-    updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    category = models.IntegerField(choices=CATEGORY, default=0)
-    likes = models.ManyToManyField(
-        User, related_name='blog_likes', blank=True)
-
 Table: **Comment**
 
 | **PK** | **id** (unique) | Type | Notes |
 | --- | --- | --- | --- |
+| FK | post | Foreign Key |  Post, on_delete=models.CASCADE |
+| | name | CharField | max_lenght 80 |
+| | email | EmailField | |
+| | body | TestField | |
+| | created_on | DateTimeField | auto_now_add=True |
+| | approved | Boolean | Defaut False |
 
 ***
-
-
 
 Table: **List**
 
