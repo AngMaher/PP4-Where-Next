@@ -33,13 +33,13 @@
                 {% endif %}
                 <div class="offset-md-3">
                 <br><br>
-                    <a href="{% url 'update_planning' list.pk %}" class="btn btn-info">Edit Plan</a>
-                    <a href="{% url 'bucketlist' %}" class="btn btn-info"> Back</a>
+                    <a href="{% url 'update_planning' list.pk %}" class="btn btn-info btn-log">Edit Plan</a>
+                    <a href="{% url 'bucketlist' %}" class="btn btn-info btn-log"> Back</a>
                     <br><br>
                 </div>
             {% else %}
                 <h2>Please login:
-                    <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+                    <span><a href="{% url 'home' %}" class="btn btn-info btn-log">Back</a></span>
                 </h2>
             {% endif %}  
         </div>

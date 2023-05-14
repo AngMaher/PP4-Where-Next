@@ -185,13 +185,14 @@ h1, h2, h3 {
 }
 .btn-log {
     background-color: var(--main-blue);
-    color: #fff;
+    color: var(--dark-gray);
+    font-weight: 700;
 }
 
 .btn-log:hover,
 .btn-log:active {
-    background-color: #fff;
-    color: var(--main-blue);
+    background-color:var(--dark-gray);
+    color: var(--background-colour);
 }
 .icon-bucketlist {
     color: var(--dark-gray);

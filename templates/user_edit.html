@@ -10,13 +10,13 @@
         <form method="POST" class="offset-md-2">
             {% csrf_token %}
             {{ form.as_p }}
-            <button class="btn btn-info">Update</button>
-            <a href="{% url 'bucketlist' %}" class="btn btn-info">Back</a>
+            <button class="btn btn-info btn-log">Update</button>
+            <a href="{% url 'bucketlist' %}" class="btn btn-info btn-log">Back</a>
         </form>
     </div>
 {% else %}
     <h2>Please login: 
-        <span><a href="{% url 'home' %}" class="btn btn-info">Back</a></span>
+        <span><a href="{% url 'home' %}" class="btn btn-info btn-log">Back</a></span>
     </h2>
 {% endif %}
 
