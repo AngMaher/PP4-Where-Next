@@ -74,7 +74,79 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 
 [Back to top &uarr;](#contents)
 
-### Lighthouse
+### **Lighthouse**
+
+- ### **Home Page**
+<details>
+
+  ![Home Page Lighthouse](/docs/testing/lighthouse/home.png)
+</details>
+
+***
+
+- ### **About Page**
+<details>
+
+  ![About Page Lighthouse](/docs/testing/lighthouse/about.png)
+</details>
+
+***
+
+- ### **Bucket List Page**
+<details>
+
+  ![Bucket List Page Lighthouse](/docs/testing/lighthouse/bucketlist.png)
+</details>
+
+***
+
+- ### **Sign Out Page**
+<details>
+
+  ![Bucket List Page Lighthouse](/docs/testing/lighthouse/signout.png)
+</details>
+
+***
+
+- ### **Edit Bucket List Page**
+<details>
+
+  ![Bucket List Page Lighthouse](/docs/testing/lighthouse/edit-bucketlist.png)
+</details>
+
+***
+
+- ### **View Plan Page**
+<details>
+
+  ![Bucket List Page Lighthouse](/docs/testing/lighthouse/view-plan.png)
+</details>
+
+***
+
+- ### **Add Plan Page**
+<details>
+
+  ![Add Plan Page Lighthouse](/docs/testing/lighthouse/add-plan.png)
+</details>
+
+***
+
+- ### **Delete Item Page**
+<details>
+
+  ![Delete Item Page Lighthouse](/docs/testing/lighthouse/delete-item.png)
+</details>
+
+***
+
+- ### **Register Page**
+<details>
+
+  ![Register Page Lighthouse](/docs/testing/lighthouse/delete-item.png)
+</details>
+
+***
 
 [Back to top &uarr;](#contents)
 
