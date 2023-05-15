@@ -148,6 +148,14 @@ In order to properly validate my HTML pages with Jinja syntax for authenticated 
 
 ***
 
+- ### **Edit User Page**
+<details>
+
+  ![Edit User Page Lighthouse](/docs/testing/lighthouse/edit-user.png)
+</details>
+
+***
+
 [Back to top &uarr;](#contents)
 
 ## Manual Testing

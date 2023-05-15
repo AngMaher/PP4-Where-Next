@@ -7,12 +7,14 @@ from .forms import AddBucketlistForm, UpdatePlanningForm
 from django.contrib.auth.models import User
 
 
+# display list function
 class UserList(generic.ListView):
     model = List
     queryset = List.objects.all()
     template_name = 'userbucketlist/bucketlist.html'
 
 
+# Add Bucket List Item
 class AddListItem(generic.CreateView):
     model = List
     form_class = AddBucketlistForm
@@ -31,6 +33,7 @@ class AddListItem(generic.CreateView):
         return self.success_message % cleaned_data
 
 
+# Update Bucket List Item
 class UpdateListItem(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_list_item.html'
@@ -49,6 +52,7 @@ class UpdateListItem(generic.UpdateView):
         return self.success_message % cleaned_data
 
 
+# View Plan for Buckey List Item
 class ViewPlanning(generic.DetailView):
     model = List
     queryset = List.objects.all()
@@ -56,6 +60,7 @@ class ViewPlanning(generic.DetailView):
     fields = ['planning']
 
 
+# Update Plan
 class UpdatePlan(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_planning.html'
@@ -74,6 +79,7 @@ class UpdatePlan(generic.UpdateView):
         return self.success_message % cleaned_data
 
 
+# Delete Bucket List Item
 def DeleteListItem(request, item_id):
     list_item = get_object_or_404(List, pk=item_id)
     context = {'list_item': list_item}
@@ -85,6 +91,7 @@ def DeleteListItem(request, item_id):
     return render(request, 'userbucketlist/delete_list_item.html', context)
 
 
+# Update PLan View
 def index(request):
     plan = List.objects.all()
     planform = UpdatePlanningForm

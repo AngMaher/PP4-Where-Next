@@ -72,6 +72,7 @@ class PostContent(View):
         )
 
 
+# class for likes on blogs posts
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -101,6 +102,7 @@ def userEdit(request, user_id):
             return HttpResponseRedirect(reverse('home'))
 
 
+# function for category
 def CategoryView(request, cats):
     category_posts = Post.objects.filter(category=cats)
     return render(request, 'categories.html', {

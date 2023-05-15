@@ -594,6 +594,7 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
 
 - Set up a forum section where members can connect and ask questions or start chats about anything Travel.
 - Login through socails, and forget password
+- Have Categories as drop down menu on the navigation bar
 
 ## Credits
 
@@ -618,6 +619,5 @@ I sometimes applied principles within them to the site, after fully understandin
  ## Acknowledgements
   
 - I would like to thank my mentor Jubril for his guidance and help throughout the project and my many testers (family and friends).
-- 
 
 [Back to top &uarr;](#contents)

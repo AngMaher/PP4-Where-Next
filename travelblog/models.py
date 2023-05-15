@@ -6,6 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 CATEGORY = ((0, "General"), (1, "Tips"), (2, "Review"), (3, "Destinations"))
 
 
+# Model for Blog Post
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     title_tag = models.CharField(max_length=200, default="Where Next?")
@@ -33,6 +34,7 @@ class Post(models.Model):
         return self.likes.count()
 
 
+# Mobel for comment section
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")

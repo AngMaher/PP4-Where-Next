@@ -3,6 +3,7 @@ from django import forms
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 
+# Form to Add a new bucket List item
 class AddBucketlistForm(forms.ModelForm):
 
     class Meta:
@@ -23,6 +24,7 @@ class AddBucketlistForm(forms.ModelForm):
         }
 
 
+# Form to Update Planning
 class UpdatePlanningForm(forms.ModelForm):
     class Meta:
         model = List
