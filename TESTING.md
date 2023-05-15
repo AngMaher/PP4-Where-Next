@@ -264,6 +264,32 @@ As a Site Admin I can search through posts, comments and Bucket List Items so th
 [Back to top &uarr;](#contents)
 
 
-### Bugs/known issues
+### Bugs/known 
+
+- Througout the project I came across the same error I done alot of research online but could not find a working sol, I was onto the tutors twice but was not resolved. I found where the s where on elephantsql and was able to manually close them as the error arose. My mentor also had a look. So the issue is still unresolved.
+
+
+![bug connections](/docs/testing/bug-connections.png)
+
+UNRESOLVED
+
+***
+
+-  When the project was first deployed to Heroku the static files were not loading. After a lot of reseach the same thing was coming up over and over. Install whotenoise to solve this problem.  So I found a walk through video to help do this. I did and the problem was resolved.  When I went to do final deployment to site would not work and got an Internal Server Error. After talking to Tutors I was given two choices either delete whitenoise or do some changes to make whitenoise and cloudinary work together. I was also told that because I had installed both CKEditor and summernote it may cause problems. I made a few changes and to settings and got the site working again.
+
+RESOLVED
+
+***
+
+- I have used summernote on the field to add content to blogs in the admin side. However when I went to use it on the field to add planning to the bucket list I could get it to work on the admin side, but could not get it to show up on the template page for the site User. I decided to use CKEditor for this instead and it resolved the issue and everything was working.  However I was talking to a Tutor because of above error and was advised to use one or the other and not both. So I deleted CKEditor. I am still back to the same problem. My mentor can not see a reason for it not to work, and I was advised to mention it here.
+
+
+![bug summernote](/docs/testing/user-plan.png)
+![bug summernote](/docs/testing/admin-plan.png)
+
+
+UNRESOLVED
+
+***
 
 [Back to top &uarr;](#contents)

@@ -34,60 +34,71 @@ You can find the live appliaction here: <a href ='https://pp4-where-next.herokua
 
     - [Colour Scheme](#colour-scheme)
 
+  - [Agile](#agile)
+
+    - [The Ideal User Persona](#the-ideal-userpersona)
+
     - [User Goals](#user-goals)
 
     - [Developer Goals](#developer-goals)
 
+    - [Goals not completed](#goals-not-completed)
+
   - [Logic and Features](#logic-and-features)
 
     - [Logic](#logic)
-
-      - [Database Structure](#database-structure)
+      
       - [Data Models](#data-model)
 
     - [Features](#features)
 
-      - [main menu](#main-menu)
+      - [About Page](#about-page)
 
-      - [Player Menu](#player-menu)
+      - [Home Page](#home-page)
 
-      - [Enter Player Details](#enter-player-details)
+      - [Blog Content Page](#blog-content-page)
 
-      - [Delete a Player](#delete-a-player)
+      - [Register New User](#register-new-user)
+      
+      - [Sign In](#sign-in)
 
-      - [List of Outstanding Fees](#list-of-outstanding-fees)
+      - [Log Out](#log-out)
 
-      - [Pay Fees](#pay-fees)
+      - [Bucket List Page](#bucket-list-page)
 
-      - [Check Kit Sizes](#check-kit-sizes)
+      - [Add a Bucket List Item](#add-a-bucket-list-item)
 
-      - [Raffle Menu](#raffle-menu)
+      - [Edit a Bucket List Item](#edit-a-bucket-list-item)
 
-      - [Finishing Screen](#finishing-screen)
+      - [Add a plan to one bucket list item](#add-a-plan-to-one-bucket-list-item)
 
-  - [Technology](#technology)
+      - [View the plan to one bucket list item](#view-the-plan-to-one-bucket-list-item)
 
-    - [Lanuages Used](#languages-used)
+      - [Delete a Bucket List Item](#delete-a-bucket-list-item)
 
-    - [Software Used](#software-used)
+      - [Footer](#footer)
+      
+      - [Nav Bar When Logged Out](#nav-bar-when-logged-out)
 
-    - [Python Libraries/Modules](#python-librariesmodules)
+      - [Nav Bar When Logged In](#nav-bar-when-logged-in)
+
+  - [Tools and Technology](#tools-and-technology)
 
   - [Testing](#testing)
 
-    - [Validation](#validation)
-
-      - [PEP8CI](#pep8)
-
-    - [Manual Testing](#manual-testing)
-
-    - [Bugs/Known Issues](#bugsknown-issues)
-
   - [Deployment](#deployment)
 
-    - [Git and Github](#git-and-github)
+    - [ElephantSQL Database](#elephantsql-database)
 
-    - [Deployment to Heroku](#deployment-to-heroku)
+    - [Cloudinary API](#cloudinary-api)
+
+    - [Heroku Deployment](#heroku-deployment)
+
+    - [Local Deployment](#local-deployment)
+
+    - [Cloning](#cloning)
+
+    - [Forking](#forking)
 
   - [Future Development](#future-development)
 
@@ -209,10 +220,12 @@ Bucket List dream becomes a reality.
 
 ## Logic
 
-### Database structure
-
 ### Data Model
 
+- Allauth User Model
+
+  - The User model was built using Django's Allauth library
+    When a user is created, they're automatically assigned a profile through the Profile model.
 
 Table: **Post**
 
@@ -227,8 +240,6 @@ Table: **Post**
 | | updated_on |DateTimeField | auto_now_add true |
 | | content | TextField | |
 | FK | likes | Many to Many | User, related_name="blog_likes", blank=True |
-
-
 
 ***
 Table: **Comment**
@@ -392,17 +403,14 @@ Table: **List**
 
 [Back to top &uarr;](#table-of-contents)
 
-## Technology
+##  Tools and Technology
 
-### Languages Used
 
 - [HTML](https://www.w3schools.com/html/) - Used for the main site.
 - [Markdown](https://www.markdownguide.org/cheat-sheet) - language used to write README and TESTING documents.
 - [CSS](https://www.w3schools.com/css/) - Styling language, used for the styling of the website.
+- [JavaScript](https://www.w3schools.com/js/default.asp) - used in nav bar for user to edit profile, and auto dissmiss of messages.
 - [Python](https://www.python.org/) - high level programming language, used of the back end programming language.
-
-
-### Software Used
 
 - [LucidChart](https://lucidchart.com) - LucidChart was used to create flowchart for the project.
 - [Git](https://git-scm.com/) - Git was used for version control by using the Gitpod terminal to commit to Git and push to Github.
@@ -410,9 +418,6 @@ Table: **List**
 - [Google Sheets](https://www.google.com/sheets/about/) - Used to store all the data from the program.
 - [Heroku](https://www.heroku.com/home) - Heroku was used to deploy the project.
 - [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - Used to create the logo for the project.
-
-### Python Libraries/Modules
-
 - [gspread](https://docs.gspread.org/en/v5.7.0/) - used for control of Google Sheets 
 - [OAuthLib](https://oauthlib.readthedocs.io/en/latest/) - needed to access google sheets
 - [os](https://www.geeksforgeeks.org/os-module-python-examples/) - used to write the clear screen function
@@ -421,6 +426,7 @@ Table: **List**
 - [random](https://www.w3schools.com/python/ref_random_random.asp) - Python Module used to generate random numbers for raffle
 - [tabulate](https://www.statology.org/create-table-in-python/) - Used to create the table to print the data from the player worksheet
 - [colorama](https://pypi.org/project/colorama/) - Used to colour the text in terminal output.
+- [canva](https://www.canva.com/) - Usedto create the two images on the about page.
 
 
 [Back to top &uarr;](#contents)
@@ -429,8 +435,6 @@ Table: **List**
 
 Please find Testing here: [Testing](TESTING.md)
 
-
-## Deployment
 
 ***
 ## Deployment
@@ -535,6 +539,8 @@ import os
 os.environ.setdefault("CLOUDINARY_URL", "insert your own Cloudinary API key here")
 os.environ.setdefault("DATABASE_URL", "insert your own ElephantSQL database URL here")
 os.environ.setdefault("SECRET_KEY", "this can be any random secret key")
+
+# local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
 ```
 
@@ -547,14 +553,15 @@ Once the project is cloned or forked, in order to run it locally, you'll need to
 - Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
 - Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
 
-[Back to top &uarr;](#content)
+[Back to top &uarr;](#contents)
+
 
 ***
 #### Cloning
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/ShemmyYo/django-shemmylicious) 
+1. Go to the [GitHub repository](https://github.com/AngMaher/PP4-Where-Next) 
 2. Locate the Code button above the list of files and click it 
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
@@ -581,28 +588,36 @@ Alternatively, if using Gitpod, you can click below to create your workspace usi
 
 ***
 
-
 ## Future Development
 
 [Back to top &uarr;](#contents)
 
+- Set up a forum section where members can connect and ask questions or start chats about anything Travel.
+- Login through socails, and forget password
+
 ## Credits
 
-### Code
+Throughout the building process I found many helpful tutorials online.
+I sometimes applied principles within them to the site, after fully understanding their code and modifying to fit the site's needs.
 
-### docs
-
-- [Text ASCII Art Generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - to create my logo
-
+1. [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template) - This repository was created using the template provided by Code Institute.
+1. [Django Documentation](https://docs.djangoproject.com/en/4.0/) - Django step-by-step document to ensure everything is set up correctly. 
+1. [Allauth Documentation](https://django-allauth.readthedocs.io/en/latest/faq.html) - referenced during development.
+1. [Cloudinary Documentation](https://cloudinary.com) - referenced during development.
+1. [Summernote Documentation](https://summernote.org/) and [Git](https://github.com/summernote/django-summernote) - referenced during development.
+1. [Crispy Forms Documentation](https://django-crispy-forms.readthedocs.io/en/latest/) - referenced during development.
+1. [John Elder - Django](https://www.youtube.com/playlist?list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy) - YouTube series that help me through project. 
+1. [Stackoverflow](https://stackoverflow.com/) -Used to search issues I had.
+1. [Slack](https://slack.com/intl/en-ie/) - I used Slack when I could to get answers to issues I had, it is a great resource when people are online.
+1. [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder/) - tool to help generating some parts of the Markdown files
+1. [W3Schools](https://www.w3schools.com/python/) - great for explaining topics.
+1. [canva](https://www.canva.com/) - Used to create the images on the about page and logo for error pages.
 
 [Back to top &uarr;](#contents)
 
-### Resources
-
- - Websites used along with course material were [StackOverFlow](https://stackoverflow.com/questions/18754276/python-for-beginners), and [W3Schools](https://www.w3schools.com/python/)
-
  ## Acknowledgements
   
-- I would like to thank my mentor Jubril for his guidance through the project and my many testers (family and friends).
+- I would like to thank my mentor Jubril for his guidance and help throughout the project and my many testers (family and friends).
+- 
 
 [Back to top &uarr;](#contents)
