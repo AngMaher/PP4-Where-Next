@@ -14,6 +14,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -21,7 +23,8 @@ urlpatterns = [
     path('', include('travelblog.urls'), name='travelblog_urls'),
     path('accounts/', include('allauth.urls')),
     path('bucketlist/', include('bucketlist.urls'), name='bucketlist_urls'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 handler404 = "travelblog.views.handler_404"
 handler404 = "travelblog.views.handler_403"
