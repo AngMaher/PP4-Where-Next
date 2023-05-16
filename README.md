@@ -619,5 +619,6 @@ I sometimes applied principles within them to the site, after fully understandin
  ## Acknowledgements
   
 - I would like to thank my mentor Jubril for his guidance and help throughout the project and my many testers (family and friends).
+- I would also like to mention Ed on tutor support, who helped me get my project over the finish line.
 
 [Back to top &uarr;](#contents)

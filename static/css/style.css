@@ -1,3 +1,4 @@
+/* site colours */
 :root {
     --main-blue: #5799e1;
     --dark-gray: #343434;
@@ -22,6 +23,12 @@ body {
     background-color: var(--background-colour);
 }
 
+/* all headings gray and capitalised */
+h1, h2, h3 {
+    color: var(--dark-gray);
+    text-transform: capitalize;
+}
+
 /* Nav Bar */
 .nav {
     font-size: 22px;
@@ -42,11 +49,7 @@ body {
     color: var(--main-blue);
     font-size: 23px;
 }
-/* all headings gray and capitalised */
-h1, h2, h3 {
-    color: var(--dark-gray);
-    text-transform: capitalize;
-}
+
 /* blog post card */
 .card {
     border: none;
@@ -58,8 +61,7 @@ h1, h2, h3 {
     font-size: 20px;
 }
 
-/* Bucket List */
-
+/* Bucket List button group */
 .btn-secondary {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
@@ -69,7 +71,7 @@ h1, h2, h3 {
 .btn-danger {
     font-size: 12px;
 }
-
+/* wlcome logo */
 .logo {
     color: var(--dark-gray);
     font-family: 'Noto Sans', sans-serif;
@@ -77,6 +79,7 @@ h1, h2, h3 {
     font-size: 1.5rem;
 }
 
+/* Banner */
 .banner-image {
     background: repeat center center;
     height: 150px;
@@ -91,6 +94,8 @@ h1, h2, h3 {
     bottom: 30%;
     left: 45%;
 }
+
+/* masthead*/
 .image-container {
     position: relative;
 }
@@ -101,17 +106,6 @@ h1, h2, h3 {
     min-width: 30%;
     left: -2px;
     background-color: rgb(87, 153, 225, 0.7);
-}
-
-.category {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.category:hover {
-    color: var(--dark-gray);
 }
 
 .masthead {
@@ -147,6 +141,19 @@ h1, h2, h3 {
     -moz-transform: skew(0deg);
     transform: skew(10deg);
     z-index: 100;
+}
+
+/* blog category */
+
+.category {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.category:hover {
+    color: var(--dark-gray);
 }
 
 .post-link {
@@ -194,6 +201,8 @@ h1, h2, h3 {
     background-color:var(--dark-gray);
     color: var(--background-colour);
 }
+
+/* bucket list*/
 .icon-bucketlist {
     color: var(--dark-gray);
     text-decoration: none;
