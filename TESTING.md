@@ -188,7 +188,7 @@ Categories | Click | navigates to category page | PASS
 Title | Click | navigates to blog post page | PASS
 Blog Cards | Display | Display card with date time likes and comments | PASS
 Pagination | Display | shows pagination button after 6 posts | PASS
-Pagination | Click | navagtes to next page of posts | PASS
+Pagination | Click | navigtes to next page of posts | PASS
 
 
 ### Bucket List
@@ -346,7 +346,7 @@ As a Site Admin I can search through posts, comments and Bucket List Items so th
 
 ### Bugs/known 
 
-- Througout the project I came across the same error I done alot of research online but could not find a working solution, I was onto the tutors twice but was not resolved. I found where the connections where on elephantsql and was able to manually close them as the error arose. My mentor also had a look. So the issue is still unresolved.
+- Throughout the project I came across the same error I did a lot of research online but could not find a working solution, I was onto the tutors twice but was not resolved. I found where the connections where on elephantsql and was able to manually close them as the error arose. My mentor also had a look. So the issue is still unresolved.
 
 
 ![bug connections](/docs/testing/bug-connections.png)

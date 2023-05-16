@@ -2,12 +2,12 @@
 
 ## About
 
-This website is a Travel Blog, a travel blog with a difference. There are lots of different blog articles to read to inspire your next adventure. 
-Not only that! You can set up your own private Travel Bucket List, and also plan how to make each one a reality!!
+This website is a Travel Blog, a travel blog with a difference. There are lots of different blog articles to read to inspire the next adventure. 
+Not only that! They can set up their own private Travel Bucket List, and also plan how to make each one a reality!!
 
 The User has access to all the blogs on the site, once registered and logged in, they can interact with the each blog by liking and commenting. 
 
-This site also allows them to store their very one Travel Bucket List, They can:
+This site also allows them to store their very own Travel Bucket List, They can:
   - Create new items on their list.
   - Edit any of their ideas.
   - Delete any they longer want to achieve.
@@ -21,6 +21,8 @@ For each Item on their Bucket List, lets say "Want to travel to Rome". They can:
 
 
 You can find the live appliaction here: <a href ='https://pp4-where-next.herokuapp.com/'>Where Next?</a>
+
+Repo link <a href ="https://github.com/AngMaher/PP4-Where-Next">Here</a>
 
 ![Am I responsive](/docs/readme/amiresponsive.png)
 
@@ -109,7 +111,7 @@ You can find the live appliaction here: <a href ='https://pp4-where-next.herokua
 
 # User Experience
 
-I wanted to keep the design clean, clear and simple to show a contempary and uncluttered design.  The site is mainly off white for the background and blue a colour to premote travel.
+I wanted to keep the design clean, clear and simple to show a contempary and uncluttered design.  The site is mainly white for the background and blue a colour to premote travel.
 
 ## Wireframes
 
@@ -150,7 +152,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## Colour Scheme
 
-I decided to keep the website bright with a main colur of blue throughout the site. 
+I decided to keep the website bright with a main colour of blue throughout the site. 
 
   - #343434 - Jet, this colour is used a on the majority of the text throughout the site, and the footer.
   - #5799E1 - Blue, this is used on many features, buttons and highlighting links, popup messages.
@@ -284,14 +286,18 @@ Table: **List**
   ![example of bucket list](/docs/readme/example-bucket-list.png)
 </details>
 
+***
+
 - ### **Home Page**
-  - This is the blog page, all user logged in or not see this page and get to scroll through the list of blogs.
+  - This is the blog page, all users logged in or not see this page and get to scroll through the list of blogs.
 
 <details>
     <summary>CLick to View Home Page</summary>
 
   ![Blog Page](/docs/readme/home-page.png)
 </details>
+
+***
 
  - ### **Blog Content Page**
   - This page shows the main content of any blog the user wishes to read.
@@ -301,6 +307,8 @@ Table: **List**
   ![Content Page](/docs/readme/blog-content.png)
 </details>
 
+***
+
 - ### **Register New User**
   - This is where a new user can register to the site.
 <details>
@@ -308,6 +316,8 @@ Table: **List**
 
   ![register](/docs/readme/register.png)
 </details>
+
+***
 
 - ### **Sign In** 
   - This is where the user signs in who already has an account.
@@ -318,22 +328,28 @@ Table: **List**
   ![sign in](/docs/readme/sign-in.png)
 </details>
 
+***
+
 - ### **Log Out** 
-  - This is where the user signs in who already has an account.
+  - This is where the user signs out who.
 <details>
     <summary>Click here to View Log Out Page</summary>
 
   ![log out](/docs/readme/log-out.png)
 </details>
 
+***
+
 - ### **Bucket List Page**
   - This page show the logged in user all their own bucket list items.
 
 <details>
-    <summary>Clic here to View the Bucket List</summary>
+    <summary>Click here to View the Bucket List</summary>
 
   ![bucket list](/docs/readme/bucket-list.png)
 </details>
+
+***
 
 - ### **Add a Bucket List Item**
   - This page allows the logged in user to add a bucket list item.
@@ -344,6 +360,8 @@ Table: **List**
   ![Add bucket list](/docs/readme/add-bucket-item.png)
 </details>
 
+***
+
 - ### **Edit a Bucket List Item**
   - This page allows the logged in user to edit a bucket list item.
 <details>
@@ -351,6 +369,8 @@ Table: **List**
 
   ![edit bucket list](/docs/readme/update-bucket-item.png)
 </details>
+
+***
 
 - ### **Add a plan to one bucket list item**
   - This page allows the logged in user to add content to the bucket list item, allowing them to save information, links etc to help them plan how to make it reality.
@@ -360,13 +380,17 @@ Table: **List**
   ![plan bucket list](/docs/readme/edit-plan.png)
 </details>
 
+***
+
 - ### **View the plan to one bucket list item**
-  - This page allows the logged in user to view their plan on one bucket list item like a mood board to see how thier plan is coming along.
+  - This page allows the logged in user to view their plan on one bucket list item like a mood board to see how their plan is coming along.
 <details>
 <summary>Click here to View the Plan Page</summary>
 
   ![plan bucket list](/docs/readme/view-plan.png)
 </details>
+
+***
 
 - ### **Delete a Bucket List Item**
   - This page allows the logged in user to delete a bucket list item.
@@ -376,30 +400,38 @@ Table: **List**
   ![delete bucket list](/docs/readme/delete-item.png)
 </details>
 
+***
+
 - ### **Footer**
-  - The footer of the site is kept simple with lo=inks to all socials.
+  - The footer of the site is kept simple with links to all socials.
 <details>
 <summary>Click here to View the Footer</summary>
 
   ![footer](/docs/readme/footer.png)
 </details>
 
+***
+
 - ### **Nav Bar When Logged Out**
   - The navigation bar when user is not logged in.
 <details>
-<summary>Click here to View the Log Out Page</summary>
+<summary>Click here to View the Log Out NavBar</summary>
 
   ![logged out nav](/docs/readme/nav-logged-out.png)
 </details>
+
+***
 
 - ### **Nav Bar When Logged In**
   - When a user logs in the nav bar changes to show the bucket list and also to welcome them by name.
 
 <details>
-  <summary>Click here to see the Log In Page</summary>
+  <summary>Click here to see the Log In NavBar</summary>
 
   ![logged in nav](/docs/readme/nav-logged-in.png)
 </details>
+
+***
 
 [Back to top &uarr;](#table-of-contents)
 
@@ -439,7 +471,7 @@ Please find Testing here: [Testing](TESTING.md)
 ***
 ## Deployment
 
-The live deployed application can be found deployed on [Heroku](https://shemmylicious.herokuapp.com).
+The live deployed application can be found deployed on [Heroku](https://pp4-where-next.herokuapp.com/).
 
 ***
 ### ElephantSQL Database

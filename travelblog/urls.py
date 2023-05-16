@@ -4,7 +4,6 @@ from bucketlist.views import UserList
 from django.urls import path, include
 
 
-
 urlpatterns = [
     path('', views.BlogPosts.as_view(), name='home'),
     path('about/', AboutView, name='about'),
