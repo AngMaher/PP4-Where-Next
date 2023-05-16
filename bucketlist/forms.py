@@ -1,6 +1,6 @@
 from .models import List
 from django import forms
-from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
+from django_summernote.widgets import SummernoteWidget
 
 
 # Form to Add a new bucket List item
@@ -29,6 +29,9 @@ class UpdatePlanningForm(forms.ModelForm):
     class Meta:
         model = List
         fields = ['planning', ]
+        # widgets = {
+        #     'planning': forms.CharField(widget=SummernoteWidget())
+        # }
         widgets = {
-            'planning': forms.CharField(widget=SummernoteWidget())
+            'planning': SummernoteWidget()
         }

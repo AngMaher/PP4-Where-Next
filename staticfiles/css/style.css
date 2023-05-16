@@ -21,6 +21,8 @@ body {
 .main-bg {
     background-color: var(--background-colour);
 }
+
+/* Nav Bar */
 .nav {
     font-size: 22px;
 }
@@ -28,6 +30,8 @@ body {
 .active {
     border-bottom: 2px solid var(--dark-gray);
 }
+
+/* footer */
 .footer-link {
     color: var(--background-colour);
     font-size: 20px;
@@ -181,13 +185,14 @@ h1, h2, h3 {
 }
 .btn-log {
     background-color: var(--main-blue);
-    color: #fff;
+    color: var(--dark-gray);
+    font-weight: 700;
 }
 
 .btn-log:hover,
 .btn-log:active {
-    background-color: #fff;
-    color: var(--main-blue);
+    background-color:var(--dark-gray);
+    color: var(--background-colour);
 }
 .icon-bucketlist {
     color: var(--dark-gray);
@@ -218,6 +223,10 @@ h1, h2, h3 {
     color: var(--background-colour);
 }
 
+.page-link:hover {
+    background-color: var(--dark-gray);
+    color: var(--background-colour);
+}
 .btn-like {
     color: var(--dark-gray);
     border: none;

@@ -64,7 +64,8 @@ class ViewPlanning(generic.DetailView):
 class UpdatePlan(generic.UpdateView):
     model = List
     template_name = 'userbucketlist/update_planning.html'
-    fields = ['planning', ]
+    # fields = ['planning', ]
+    form_class = UpdatePlanningForm
     success_message = "Your plan has been updated! You are on your way to complete your dream!"  # noqa
 
     def form_valid(self, UpdatePlanningForm):
