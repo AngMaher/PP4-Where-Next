@@ -459,6 +459,14 @@ Table: **List**
 - [tabulate](https://www.statology.org/create-table-in-python/) - Used to create the table to print the data from the player worksheet
 - [colorama](https://pypi.org/project/colorama/) - Used to colour the text in terminal output.
 - [canva](https://www.canva.com/) - Usedto create the two images on the about page.
+- [Nation wide.com](https://www.nationwide.com/lc/resources/home/articles/travel-safety-tips) - Used for Blog Content
+- [getawayswithkids.ie](https://www.getawayswithkids.ie/2019/09/02/a-10-day-visit-to-sanguli-salou/) - Used for Blog Content
+- [SFTravel.com](https://www.sftravel.com/article/san-francisco-screen-where-famous-films-and-tv-shows-were-shot-around-city) - Used for Blog Content
+- [guidetoiceland.is](https://guidetoiceland.is/best-of-iceland/top-12-things-to-do-in-iceland) - Used for Blog Content
+- [cntraveller.com](https://www.cntraveller.com/gallery/10-great-restaurants-in-rome) - Used for Blog Content
+- [thetravelmagazine.net](https://www.thetravelmagazine.net/ski-resort-review-thyon-switzerland/) - Used for Blog Content
+- [upgradedpoints.com](https://upgradedpoints.com/travel/best-tips-family-travel-with-kids/) - Used for Blog Content
+
 
 
 [Back to top &uarr;](#contents)
